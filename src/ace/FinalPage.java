@@ -37,9 +37,9 @@ public class FinalPage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(234, 234, 234));
+        jPanel1.setBackground(new java.awt.Color(53, 53, 54));
 
-        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(153, 0, 0));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -77,6 +77,7 @@ public class FinalPage extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Constantia", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("A.C.E. - ASSESS.CALCULATE.EXCEL");
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 153));
