@@ -101,7 +101,7 @@ public class HomePageClose extends javax.swing.JFrame {
             .addGap(0, 136, Short.MAX_VALUE)
         );
 
-        jPanel16.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
