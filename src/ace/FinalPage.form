@@ -60,13 +60,13 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="logout" max="32767" attributes="0"/>
                                   <Component id="changeacc" max="32767" attributes="0"/>
-                                  <Component id="delacc" pref="473" max="32767" attributes="0"/>
+                                  <Component id="delacc" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="240" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
+                              <Component id="jLabel1" max="32767" attributes="0"/>
+                              <EmptySpace min="416" pref="416" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
