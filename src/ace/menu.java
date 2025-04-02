@@ -4,6 +4,7 @@
  */
 package menusidebar.menusidebar;
 
+import ace.SignUp;
 import ace.smthsmtj;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -135,9 +136,9 @@ public class menu extends javax.swing.JFrame {
         finalpageScreen = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        LOGOUT = new javax.swing.JButton();
+        change = new javax.swing.JButton();
+        delete = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 204, 102));
@@ -152,7 +153,6 @@ public class menu extends javax.swing.JFrame {
 
         hidemenu.setBackground(new java.awt.Color(153, 0, 0));
 
-        btnHidemenu.setForeground(new java.awt.Color(0, 0, 0));
         btnHidemenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnHidemenu.setText("|||");
         btnHidemenu.setPreferredSize(new java.awt.Dimension(41, 41));
@@ -201,7 +201,6 @@ public class menu extends javax.swing.JFrame {
         );
 
         accname.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 12)); // NOI18N
-        accname.setForeground(new java.awt.Color(0, 0, 0));
         accname.setText("Ayz Ocampos");
         accname.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -223,7 +222,6 @@ public class menu extends javax.swing.JFrame {
         });
 
         bio.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        bio.setForeground(new java.awt.Color(0, 0, 0));
         bio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         bio.setText("BIOLOGY 1");
         bio.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -255,7 +253,6 @@ public class menu extends javax.swing.JFrame {
         sub2.setPreferredSize(new java.awt.Dimension(240, 60));
 
         chem.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        chem.setForeground(new java.awt.Color(0, 0, 0));
         chem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         chem.setText("CHEMISTRY 1");
         chem.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -279,7 +276,6 @@ public class menu extends javax.swing.JFrame {
         sub3.setPreferredSize(new java.awt.Dimension(240, 60));
 
         p6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        p6.setForeground(new java.awt.Color(0, 0, 0));
         p6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         p6.setText("PHYSICS 1");
         p6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -303,7 +299,6 @@ public class menu extends javax.swing.JFrame {
         sub4.setPreferredSize(new java.awt.Dimension(240, 60));
 
         math.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        math.setForeground(new java.awt.Color(0, 0, 0));
         math.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         math.setText("MATH 3");
         math.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -327,7 +322,6 @@ public class menu extends javax.swing.JFrame {
         sub5.setPreferredSize(new java.awt.Dimension(240, 60));
 
         eng.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        eng.setForeground(new java.awt.Color(0, 0, 0));
         eng.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         eng.setText("ENGLISH 3");
         eng.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -351,7 +345,6 @@ public class menu extends javax.swing.JFrame {
         sub6.setPreferredSize(new java.awt.Dimension(240, 60));
 
         fil.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        fil.setForeground(new java.awt.Color(0, 0, 0));
         fil.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         fil.setText("FILIPINO 3");
         fil.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -375,7 +368,6 @@ public class menu extends javax.swing.JFrame {
         sub7.setPreferredSize(new java.awt.Dimension(240, 60));
 
         ss.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        ss.setForeground(new java.awt.Color(0, 0, 0));
         ss.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ss.setText("SOC.SCI. 3");
         ss.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -399,7 +391,6 @@ public class menu extends javax.swing.JFrame {
         sub8.setPreferredSize(new java.awt.Dimension(240, 60));
 
         pehm.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        pehm.setForeground(new java.awt.Color(0, 0, 0));
         pehm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         pehm.setText("PEHM 3");
         pehm.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -423,7 +414,6 @@ public class menu extends javax.swing.JFrame {
         sub9.setPreferredSize(new java.awt.Dimension(240, 60));
 
         valed.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        valed.setForeground(new java.awt.Color(0, 0, 0));
         valed.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         valed.setText("VALED 3");
         valed.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -447,7 +437,6 @@ public class menu extends javax.swing.JFrame {
         sub10.setPreferredSize(new java.awt.Dimension(240, 60));
 
         stat.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        stat.setForeground(new java.awt.Color(0, 0, 0));
         stat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         stat.setText("STATISTCS");
         stat.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -471,7 +460,6 @@ public class menu extends javax.swing.JFrame {
         sub11.setPreferredSize(new java.awt.Dimension(240, 60));
 
         cs.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        cs.setForeground(new java.awt.Color(0, 0, 0));
         cs.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cs.setText("COMP.SCI. 3");
         cs.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -721,7 +709,7 @@ public class menu extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(57, 53, 54));
         jPanel1.setPreferredSize(new java.awt.Dimension(805, 1900));
 
-        jLabel3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Constantia", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("A.C.E. WELCOMES YOU BACK!");
@@ -738,7 +726,6 @@ public class menu extends javax.swing.JFrame {
         );
 
         jTextField1.setBackground(new java.awt.Color(161, 156, 155));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
         jTextField1.setText("jTextField1");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -753,7 +740,6 @@ public class menu extends javax.swing.JFrame {
         );
 
         jTextField2.setBackground(new java.awt.Color(161, 156, 155));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.setText("jTextField1");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -768,7 +754,6 @@ public class menu extends javax.swing.JFrame {
         );
 
         jTextField3.setBackground(new java.awt.Color(161, 156, 155));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
         jTextField3.setText("jTextField1");
 
         jTextField4.setText("jTextField1");
@@ -1044,7 +1029,6 @@ public class menu extends javax.swing.JFrame {
 
         jTable1.setBackground(new java.awt.Color(221, 221, 221));
         jTable1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        jTable1.setForeground(new java.awt.Color(0, 0, 0));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -1071,7 +1055,6 @@ public class menu extends javax.swing.JFrame {
         jTable1.setRowHeight(30);
         jTable1.setRowSelectionAllowed(false);
         jTable1.setSelectionBackground(new java.awt.Color(161, 156, 155));
-        jTable1.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable1.setShowGrid(true);
@@ -1226,9 +1209,9 @@ public class menu extends javax.swing.JFrame {
                 .addGap(46, 46, 46))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(300, 300, 300)
-                .addComponent(graph, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
+                .addComponent(graph, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
                 .addGap(80, 80, 80)
-                .addComponent(pie, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE)
+                .addComponent(pie, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
                 .addGap(300, 300, 300))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(206, 206, 206)
@@ -1252,11 +1235,11 @@ public class menu extends javax.swing.JFrame {
                 .addGap(206, 206, 206))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(200, 200, 200)
-                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
                 .addGap(200, 200, 200))
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(200, 200, 200)
-                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
                 .addGap(200, 200, 200))
         );
         jPanel5Layout.setVerticalGroup(
@@ -1311,17 +1294,29 @@ public class menu extends javax.swing.JFrame {
         jSeparator1.setForeground(new java.awt.Color(130, 130, 130));
         jSeparator1.setPreferredSize(new java.awt.Dimension(50, 30));
 
-        jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("LOG-OUT");
+        LOGOUT.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        LOGOUT.setText("LOG-OUT");
+        LOGOUT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LOGOUTActionPerformed(evt);
+            }
+        });
 
-        jButton2.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("CHANGE ACCOUNT");
+        change.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        change.setText("CHANGE ACCOUNT");
+        change.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeActionPerformed(evt);
+            }
+        });
 
-        jButton3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("DELETE ACCOUNT");
+        delete.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        delete.setText("DELETE ACCOUNT");
+        delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout finalpageScreenLayout = new javax.swing.GroupLayout(finalpageScreen);
         finalpageScreen.setLayout(finalpageScreenLayout);
@@ -1334,10 +1329,10 @@ public class menu extends javax.swing.JFrame {
             .addGroup(finalpageScreenLayout.createSequentialGroup()
                 .addGap(212, 212, 212)
                 .addGroup(finalpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LOGOUT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(change, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(212, 212, 212))
         );
         finalpageScreenLayout.setVerticalGroup(
@@ -1348,11 +1343,11 @@ public class menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LOGOUT, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(change, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(119, Short.MAX_VALUE))
         );
 
@@ -1816,6 +1811,18 @@ public class menu extends javax.swing.JFrame {
         
     }//GEN-LAST:event_bioMouseExited
 
+    private void LOGOUTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LOGOUTActionPerformed
+        
+    }//GEN-LAST:event_LOGOUTActionPerformed
+
+    private void changeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_changeActionPerformed
+
+    private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_deleteActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1852,6 +1859,7 @@ public class menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton LOGOUT;
     private javax.swing.JLabel accname;
     private javax.swing.JLabel bio;
     private javax.swing.JLabel btnFinalpage;
@@ -1860,10 +1868,12 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JLabel btnInputpage;
     private javax.swing.JLabel btnProgresspage;
     private javax.swing.JPanel buttons;
+    private javax.swing.JButton change;
     private javax.swing.JLabel chem;
     private javax.swing.JPanel content;
     private javax.swing.JLabel cs;
     private javax.swing.JPanel dashboard;
+    private javax.swing.JButton delete;
     private javax.swing.JLabel eng;
     private javax.swing.JLabel fil;
     private javax.swing.JPanel finalpage;
@@ -1874,9 +1884,6 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JPanel homepageScreen;
     private javax.swing.JPanel inputpage;
     private javax.swing.JPanel inputpageScreen;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
