@@ -2186,7 +2186,9 @@ public class GRADE9 extends javax.swing.JFrame {
     }//GEN-LAST:event_LOGOUTActionPerformed
 
     private void changeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeActionPerformed
-        // TODO add your handling code here:
+        SignUp signup = new SignUp(); 
+        signup.setVisible(true); 
+        this.dispose(); 
     }//GEN-LAST:event_changeActionPerformed
 
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
