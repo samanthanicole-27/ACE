@@ -2,7 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package menusidebar.menusidebar;
+//package menusidebar.menusidebar;
+package ace;
 
 
 import ace.LogIn;
@@ -29,10 +30,10 @@ import javax.swing.Timer;
  *
  * @author AykAyz
  */
-public class menu extends javax.swing.JFrame {
+public class GRADE9 extends javax.swing.JFrame {
     
     boolean a = false;
-    public menu() {
+    public GRADE9() {
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         initComponents();
         
@@ -48,6 +49,8 @@ public class menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuItem1 = new javax.swing.JMenuItem();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jScrollPane9 = new javax.swing.JScrollPane();
         menu = new javax.swing.JPanel();
         menuIcon = new javax.swing.JPanel();
         hidemenu = new javax.swing.JPanel();
@@ -120,6 +123,7 @@ public class menu extends javax.swing.JFrame {
         jPanel15 = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
         inputpageScreen = new javax.swing.JPanel();
+        jScrollPane10 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
         inputscreen = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -1207,7 +1211,7 @@ public class menu extends javax.swing.JFrame {
             .addGroup(CHEMLayout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 664, Short.MAX_VALUE)
-                .addGap(26, 26, 26))
+                .addGap(30, 30, 30))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHEMLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1385,15 +1389,17 @@ public class menu extends javax.swing.JFrame {
 
         jScrollPane3.setViewportView(inputscreen);
 
+        jScrollPane10.setViewportView(jScrollPane3);
+
         javax.swing.GroupLayout inputpageScreenLayout = new javax.swing.GroupLayout(inputpageScreen);
         inputpageScreen.setLayout(inputpageScreenLayout);
         inputpageScreenLayout.setHorizontalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
+            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 915, Short.MAX_VALUE)
         );
         inputpageScreenLayout.setVerticalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
+            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE)
         );
 
         progresspageScreen.setBackground(new java.awt.Color(0, 0, 0));
@@ -2204,27 +2210,26 @@ public class menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GRADE9.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GRADE9.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GRADE9.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GRADE9.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new menu().setVisible(true);
+                new GRADE9().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ALL;
-    private javax.swing.JPanel ALL1;
     private javax.swing.JPanel BIO;
     private javax.swing.JPanel CHEM;
     private javax.swing.JButton LOGOUT;
@@ -2286,12 +2291,15 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;

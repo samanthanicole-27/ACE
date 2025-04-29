@@ -46,7 +46,7 @@ public class GradeSelection extends javax.swing.JFrame {
         jLabel1.setText("SELECT YOUR GRADE LEVEL");
 
         gradelevel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        gradelevel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GRADE 7", "GRADE 8", "GRADE 9", "GRADE 10", "GRADE 11", "GRADE 12" }));
+        gradelevel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECT", "GRADE 7", "GRADE 8", "GRADE 9", "GRADE 10" }));
         gradelevel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gradelevelActionPerformed(evt);
@@ -57,6 +57,11 @@ public class GradeSelection extends javax.swing.JFrame {
         CONT.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         CONT.setForeground(new java.awt.Color(255, 255, 255));
         CONT.setText("PROCEED");
+        CONT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CONTActionPerformed(evt);
+            }
+        });
 
         BACK.setBackground(new java.awt.Color(153, 0, 0));
         BACK.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -133,13 +138,34 @@ public class GradeSelection extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void gradelevelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gradelevelActionPerformed
-        
+           
     }//GEN-LAST:event_gradelevelActionPerformed
 
     private void BACKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BACKActionPerformed
         new LoginOrSignUp().setVisible(true);
             dispose(); 
     }//GEN-LAST:event_BACKActionPerformed
+
+    private void CONTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CONTActionPerformed
+       String selectedGrade = (String) gradelevel.getSelectedItem();
+        if (selectedGrade.equals("GRADE 7")) {
+        
+        new GRADE7().setVisible(true);
+            dispose(); 
+        }else if(selectedGrade.equals("GRADE 8")) {
+        
+        new GRADE8().setVisible(true);
+            dispose(); 
+        }else if(selectedGrade.equals("GRADE 9")) {
+        
+        new GRADE9().setVisible(true);
+            dispose(); 
+        }else if(selectedGrade.equals("GRADE 10")) {
+        
+        new GRADE10().setVisible(true);
+            dispose(); 
+        }
+    }//GEN-LAST:event_CONTActionPerformed
 
     /**
      * @param args the command line arguments
