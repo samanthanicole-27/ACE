@@ -155,16 +155,16 @@ public class GradeSelection extends javax.swing.JFrame {
         }else if(selectedGrade.equals("GRADE 8")) {
         
         new GRADE8().setVisible(true);
-            dispose(); 
-        }else if(selectedGrade.equals("GRADE 9")) {
-        
-        new GRADE9().setVisible(true);
-            dispose(); 
-        }else if(selectedGrade.equals("GRADE 10")) {
-        
-        new GRADE10().setVisible(true);
-            dispose(); 
-        }
+            dispose(); }
+//        }else if(selectedGrade.equals("GRADE 9")) {
+//        
+//        new GRADE9().setVisible(true);
+//            dispose(); 
+//        }else if(selectedGrade.equals("GRADE 10")) {
+//        
+//        new GRADE10().setVisible(true);
+//            dispose(); 
+//        }
     }//GEN-LAST:event_CONTActionPerformed
 
     /**

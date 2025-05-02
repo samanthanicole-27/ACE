@@ -51,15 +51,16 @@ public class GRADE7 extends javax.swing.JFrame {
     
     boolean a = false;
     public GRADE7() {
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);    
         initComponents();
         
-        setupTable();
-        
-        
-         
+//        ImageIcon icon = (ImageIcon) jLabel32.getIcon();
+//        Image image = icon.getImage();
+//        Image newimg = image.getScaledInstance(jLabel32.getWidth(), jLabel32.getHeight(), java.awt.Image.SCALE_SMOOTH);
+//        jLabel32.setIcon(new ImageIcon(newimg));
+        setupTable();         
     }
-    
+   
     private void setupTable() {
         tableModel = (DefaultTableModel) assessmentTable.getModel();
         
@@ -170,24 +171,6 @@ public class GRADE7 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel34 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        jPanel33 = new javax.swing.JPanel();
-        jLabel32 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jPanel19 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jPanel20 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        jPanel21 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jPanel22 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        jPanel23 = new javax.swing.JPanel();
-        jLabel21 = new javax.swing.JLabel();
-        jPanel24 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jPanel25 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
         jScrollPane11 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
@@ -207,13 +190,20 @@ public class GRADE7 extends javax.swing.JFrame {
         jTextArea9 = new javax.swing.JTextArea();
         jScrollPane20 = new javax.swing.JScrollPane();
         jTextArea10 = new javax.swing.JTextArea();
-        jPanel26 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
         jScrollPane21 = new javax.swing.JScrollPane();
         jTextArea11 = new javax.swing.JTextArea();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
         inputpageScreen = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
-        jScrollPane3 = new javax.swing.JScrollPane();
         inputscreen2 = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
@@ -228,14 +218,6 @@ public class GRADE7 extends javax.swing.JFrame {
         calculateGradeLabel = new javax.swing.JLabel();
         CLEAR = new javax.swing.JButton();
         SAVE = new javax.swing.JButton();
-        PHYS = new javax.swing.JPanel();
-        jScrollPane16 = new javax.swing.JScrollPane();
-        jTable4 = new javax.swing.JTable();
-        jLabel11 = new javax.swing.JLabel();
-        MATH = new javax.swing.JPanel();
-        jScrollPane22 = new javax.swing.JScrollPane();
-        jTable5 = new javax.swing.JTable();
-        jLabel12 = new javax.swing.JLabel();
         progresspageScreen = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel5 = new javax.swing.JPanel();
@@ -419,7 +401,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         bio.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         bio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bio.setText("BIOLOGY 1");
+        bio.setText("MATH 1");
         bio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 bioMouseClicked(evt);
@@ -432,7 +414,7 @@ public class GRADE7 extends javax.swing.JFrame {
             sub1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sub1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(sub12, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                .addComponent(sub12, javax.swing.GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE)
                 .addContainerGap())
             .addComponent(bio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -450,7 +432,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         chem.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         chem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        chem.setText("CHEMISTRY 1");
+        chem.setText("ENGLISH 1");
         chem.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 chemMouseClicked(evt);
@@ -463,7 +445,7 @@ public class GRADE7 extends javax.swing.JFrame {
             sub2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sub2Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(chem, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
+                .addComponent(chem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         sub2Layout.setVerticalGroup(
@@ -479,7 +461,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         p6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         p6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        p6.setText("PHYSICS 1");
+        p6.setText("FILIPINO 1");
         p6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 p6MouseClicked(evt);
@@ -502,7 +484,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         math.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         math.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        math.setText("MATH 3");
+        math.setText("SOC.SCI. 1");
         math.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mathMouseClicked(evt);
@@ -525,7 +507,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         eng.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         eng.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        eng.setText("ENGLISH 3");
+        eng.setText("PEHM 1");
         eng.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 engMouseClicked(evt);
@@ -548,7 +530,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         fil.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         fil.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fil.setText("FILIPINO 3");
+        fil.setText("VALED 1");
         fil.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 filMouseClicked(evt);
@@ -571,7 +553,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         ss.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         ss.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ss.setText("SOC.SCI. 3");
+        ss.setText("ADTECH 1");
         ss.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ssMouseClicked(evt);
@@ -594,7 +576,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         pehm.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         pehm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pehm.setText("PEHM 3");
+        pehm.setText("COMP.SCI. 1");
         pehm.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pehmMouseClicked(evt);
@@ -617,7 +599,6 @@ public class GRADE7 extends javax.swing.JFrame {
 
         valed.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         valed.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        valed.setText("VALED 3");
         valed.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 valedMouseClicked(evt);
@@ -640,7 +621,6 @@ public class GRADE7 extends javax.swing.JFrame {
 
         stat.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         stat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        stat.setText("STATISTCS");
         stat.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 statMouseClicked(evt);
@@ -663,7 +643,6 @@ public class GRADE7 extends javax.swing.JFrame {
 
         cs.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         cs.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cs.setText("COMP.SCI. 3");
         cs.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 csMouseClicked(evt);
@@ -685,7 +664,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         all.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         all.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        all.setText("ALL");
+        all.setText("INTEG.SCI. 1");
         all.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 allMouseClicked(evt);
@@ -712,18 +691,18 @@ public class GRADE7 extends javax.swing.JFrame {
         separator.setLayout(separatorLayout);
         separatorLayout.setHorizontalGroup(
             separatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sub3, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub4, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub5, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub6, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub7, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub8, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub9, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub10, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub11, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
+            .addComponent(sub3, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub4, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub5, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub6, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub7, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub8, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub9, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub10, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub11, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
             .addComponent(suball, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(sub1, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
-            .addComponent(sub2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
+            .addComponent(sub1, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
         );
         separatorLayout.setVerticalGroup(
             separatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -760,14 +739,16 @@ public class GRADE7 extends javax.swing.JFrame {
         menuHideLayout.setHorizontalGroup(
             menuHideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuHideLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(pfp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(accname)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(menuHideLayout.createSequentialGroup()
-                .addComponent(separator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(menuHideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(menuHideLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(pfp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(accname))
+                    .addGroup(menuHideLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(separator, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(8, 8, 8))
         );
         menuHideLayout.setVerticalGroup(
             menuHideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -779,9 +760,9 @@ public class GRADE7 extends javax.swing.JFrame {
                     .addGroup(menuHideLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(accname)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
                 .addComponent(separator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(124, 124, 124))
+                .addContainerGap(861, Short.MAX_VALUE))
         );
 
         menu.add(menuHide, java.awt.BorderLayout.CENTER);
@@ -811,7 +792,7 @@ public class GRADE7 extends javax.swing.JFrame {
             homepageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homepageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnHomepage, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
+                .addComponent(btnHomepage, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
                 .addContainerGap())
         );
         homepageLayout.setVerticalGroup(
@@ -840,7 +821,7 @@ public class GRADE7 extends javax.swing.JFrame {
             inputpageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(inputpageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnInputpage, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                .addComponent(btnInputpage, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
                 .addContainerGap())
         );
         inputpageLayout.setVerticalGroup(
@@ -869,7 +850,7 @@ public class GRADE7 extends javax.swing.JFrame {
             progresspageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(progresspageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnProgresspage, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                .addComponent(btnProgresspage, javax.swing.GroupLayout.DEFAULT_SIZE, 292, Short.MAX_VALUE)
                 .addContainerGap())
         );
         progresspageLayout.setVerticalGroup(
@@ -898,7 +879,7 @@ public class GRADE7 extends javax.swing.JFrame {
             finalpageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(finalpageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnFinalpage, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                .addComponent(btnFinalpage, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
                 .addContainerGap())
         );
         finalpageLayout.setVerticalGroup(
@@ -943,322 +924,194 @@ public class GRADE7 extends javax.swing.JFrame {
         jPanel34.setBackground(new java.awt.Color(57, 53, 54));
         jPanel34.setPreferredSize(new java.awt.Dimension(805, 1900));
 
-        jLabel31.setFont(new java.awt.Font("Constantia", 1, 24)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 24)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel31.setText("A.C.E. WELCOMES YOU BACK!");
 
-        jPanel33.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel32.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setText("INTEGRATED SCIENCE");
-
-        javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
-        jPanel33.setLayout(jPanel33Layout);
-        jPanel33Layout.setHorizontalGroup(
-            jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel33Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel32)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        jPanel33Layout.setVerticalGroup(
-            jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel33Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jLabel32)
-                .addContainerGap(50, Short.MAX_VALUE))
-        );
-
-        jPanel18.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel15.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("MATHEMATICS");
-
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel15)
-                .addGap(45, 45, 45))
-        );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel15)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-
-        jPanel19.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel16.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("ENGLISH");
-
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jLabel16)
-                .addContainerGap(81, Short.MAX_VALUE))
-        );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel16)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-
-        jPanel20.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel17.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("FILIPINO");
-
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
-                .addGap(76, 76, 76)
-                .addComponent(jLabel17)
-                .addContainerGap(84, Short.MAX_VALUE))
-        );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
-                .addContainerGap(42, Short.MAX_VALUE)
-                .addComponent(jLabel17)
-                .addGap(27, 27, 27))
-        );
-
-        jPanel21.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel19.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("SOCIAL SCIENCE");
-
-        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
-        jPanel21.setLayout(jPanel21Layout);
-        jPanel21Layout.setHorizontalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel19)
-                .addGap(39, 39, 39))
-        );
-        jPanel21Layout.setVerticalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jLabel19)
-                .addContainerGap(48, Short.MAX_VALUE))
-        );
-
-        jPanel22.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel20.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("PEHM");
-
-        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
-        jPanel22.setLayout(jPanel22Layout);
-        jPanel22Layout.setHorizontalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel22Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addComponent(jLabel20)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel22Layout.setVerticalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
-                .addContainerGap(37, Short.MAX_VALUE)
-                .addComponent(jLabel20)
-                .addGap(32, 32, 32))
-        );
-
-        jPanel23.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel21.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("VALED");
-
-        javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
-        jPanel23.setLayout(jPanel23Layout);
-        jPanel23Layout.setHorizontalGroup(
-            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel23Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel21)
-                .addGap(87, 87, 87))
-        );
-        jPanel23Layout.setVerticalGroup(
-            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel23Layout.createSequentialGroup()
-                .addContainerGap(47, Short.MAX_VALUE)
-                .addComponent(jLabel21)
-                .addGap(22, 22, 22))
-        );
-
-        jPanel24.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel22.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("ADTECH");
-
-        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
-        jPanel24.setLayout(jPanel24Layout);
-        jPanel24Layout.setHorizontalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
-                .addContainerGap(87, Short.MAX_VALUE)
-                .addComponent(jLabel22)
-                .addGap(69, 69, 69))
-        );
-        jPanel24Layout.setVerticalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
-                .addContainerGap(45, Short.MAX_VALUE)
-                .addComponent(jLabel22)
-                .addGap(24, 24, 24))
-        );
-
-        jPanel25.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel23.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("COMPUTER SCIENCE");
-
-        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
-        jPanel25.setLayout(jPanel25Layout);
-        jPanel25Layout.setHorizontalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel25Layout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
-                .addComponent(jLabel23)
-                .addGap(26, 26, 26))
-        );
-        jPanel25Layout.setVerticalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel25Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel23)
-                .addContainerGap(43, Short.MAX_VALUE))
-        );
-
         jSeparator5.setBackground(new java.awt.Color(130, 130, 130));
         jSeparator5.setForeground(new java.awt.Color(130, 130, 130));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("Intermediate Algebra reinforces the basic concepts of Math 1 on operations, rational expressions, equations, inequalities and problem solving.  It introduces the concepts on the systems of linear equations in 2-3 variables, inequalities, radicals, relations and functions, linear functions, quadratic functions, absolute value functions, and real-life application of these functions which provide foundation in the relevance of math in the fields of science, technology and business.");
         jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane11.setViewportView(jTextArea1);
 
+        jScrollPane12.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
-        jTextArea2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea2.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
         jTextArea2.setText("Exploring and Understanding the Interconnections of Science is an integrated course that will cover content topics in Biology, Chemistry and Physics.  It introduces foundations of science principles, within the following themes or areas:  Laws and Theories Governing Science; Matter and Energy; Movements, Patterns and Trends; and Impact of Global Warming to Biodiversity.");
         jTextArea2.setWrapStyleWord(true);
+        jTextArea2.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane12.setViewportView(jTextArea2);
 
         jTextArea3.setColumns(20);
-        jTextArea3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea3.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
+        jTextArea3.setText("Physical Education 2 (PE 2) — PhysicalFitness and Basic Movement Education 2 focuses on preparing the Grade 8 students for active and successful participation in various physical activities by developing mastery over fundamental manipulative skills and developing adequate fitness level.\n\nHealth Education 2 (Health 2) — ME and my FRIENDS:  PreventiveDrug Education, Safety and First Aid focuses on safety, first aid, and preventive drug education.\n\nMusic 2 — Asian / African Music is the study of Asian/African music to better appreciate our immediate neighbors.  This includesthe music languages of several countries from South East Asia, Central Asia, South Asia, South West Asia, and Africa.  The course is also a review of fundamentals of music with added concepts related to the study of Asian and African music.\n\n ");
         jTextArea3.setWrapStyleWord(true);
+        jTextArea3.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane13.setViewportView(jTextArea3);
 
+        jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
-        jTextArea4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea4.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
         jTextArea4.setText("Communication Arts 2 and Afro-Asian Literature primarily aims to enhance the students' proficiency in the five macro-skills and develop further their English communication ability.  In addition, it intends to expose and make students familiar with Asian and African literature in order to promote appreciation for Afro-Asian culture, as well as respect for and tolerance of cultural uniqueness and diversity.");
         jTextArea4.setWrapStyleWord(true);
+        jTextArea4.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane14.setViewportView(jTextArea4);
 
+        jTextArea5.setEditable(false);
         jTextArea5.setColumns(20);
-        jTextArea5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea5.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea5.setLineWrap(true);
         jTextArea5.setRows(5);
         jTextArea5.setText("Kasanayan sa Komunikasyon at Pagpapahalaga sa Noli me Tangere, Wika, Panitikan at Iba pang Anyo ay sumasaklaw sa kasanayan sa epektibong pakikipagtalastasan sa pamamagitan ng paglinang sa kasanayan sa epektibong pakikipagtalastasan sa pamamagitan ng paglinang sa mga makrong kasanayan tulad ng pakikinig, pagsasalita, pagbasa, pagsulat, at panonood.  Bibigyan ng tuon and pag-aral sa iba’t ibang akdang pampanitikan at pagpapahalaga sa akda ng dakilang bayani na si Dr. Jose Rizal, Noli Me Tangere, upang maitanim sa isipan ng mga mag-aaral ang simulain ng kalayaan at diwang nasyonalismo.  Gayundin, mabibigyan ng sapat na kasanayan at kamulatan ang mga mag-aaral sa pamamagitan ng mga kaalamang pangwika at pampanitikan upang maunawaan at mapahalagahan ang kanilang kultura na magsisilbing gabay sa pahubog ng kanilang katauhan at pagtugon sa mga hamon ng pagbabago sa lipunang kinabibilangan.");
         jTextArea5.setWrapStyleWord(true);
+        jTextArea5.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane15.setViewportView(jTextArea5);
 
+        jTextArea7.setEditable(false);
         jTextArea7.setColumns(20);
-        jTextArea7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea7.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea7.setLineWrap(true);
         jTextArea7.setRows(5);
         jTextArea7.setText(" An Introduction to the Design Process - Resistant Materials and Electronics (Application and Evaluation) subject introduces the student to resistant materials and electronics.  This project based course is geared towards attaining a practical knowledge of the common materials, tools, and processes used in technology.  The skills involved include the design, planning and construction of various items, and the continuous application of the design process from the identification and formulation of problems to the evaluation of finished products.  This year is blocked in 2 areas:  resistant materials and electronics, the goal is for each student to experience 3 to 8 design projects per year.  Since the projects will be graded according to variety of benchmarked goals, a project can extend into the next quarter.");
         jTextArea7.setWrapStyleWord(true);
+        jTextArea7.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane17.setViewportView(jTextArea7);
 
+        jTextArea8.setEditable(false);
         jTextArea8.setColumns(20);
-        jTextArea8.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea8.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea8.setLineWrap(true);
         jTextArea8.setRows(5);
         jTextArea8.setText("World History 1 maps the progress of man from prehistory to the pre-medieval, emphasizing the origins of human civilization, the early civilizations, the emerging school of thoughts and ideas, and the early empires of the world.  World History 1 will also be discussed in the light of geography, politics, culture, and especially science and technology, providing our students with the vocabulary and perspectives necessary to analyze and articulate what they know and think of global dynamics, patterns of history, and social and economic change.\n\n ");
         jTextArea8.setWrapStyleWord(true);
+        jTextArea8.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane18.setViewportView(jTextArea8);
 
+        jTextArea9.setEditable(false);
         jTextArea9.setColumns(20);
-        jTextArea9.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea9.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea9.setLineWrap(true);
         jTextArea9.setRows(5);
         jTextArea9.setText("Knowing the Whys and Wherefores:  Toward Adolescent Wholeness.  VE 2 concerns young persons as bearers of values. With a growing desire to build their lives in an expanding world, the students develop, through cours, self deliberation for rendering judgements and decisions on novel, complex, or consequential matters. The meaning or purpose in life is presented not as a choice to be made on the outset, but as an outcome of a process of search and discernment. The values emphasized in this course are: setting one’s life directions from keen observations and memories of events and circumstances; pursuing the good with a methodological approach, a sense of rightness, and a self-disciplined will; and seeking and protecting one’s well being and wholeness.");
         jTextArea9.setWrapStyleWord(true);
+        jTextArea9.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane19.setViewportView(jTextArea9);
 
+        jTextArea10.setEditable(false);
         jTextArea10.setColumns(20);
-        jTextArea10.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea10.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea10.setLineWrap(true);
         jTextArea10.setRows(5);
         jTextArea10.setText("Introduction to Computational Thinking is a subject where students are trained to develop solutions using computers for real-life applications.  The focus is on developing program logic formulation skills through pseudo-coding, flowcharting, and procedural or structured programming using a programming language.");
         jTextArea10.setWrapStyleWord(true);
+        jTextArea10.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane20.setViewportView(jTextArea10);
 
-        jPanel26.setBackground(new java.awt.Color(153, 0, 0));
-
-        jLabel24.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("EARTH SCIENCE");
-
-        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
-        jPanel26.setLayout(jPanel26Layout);
-        jPanel26Layout.setHorizontalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jLabel24)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel26Layout.setVerticalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel24)
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
-
+        jTextArea11.setEditable(false);
         jTextArea11.setColumns(20);
-        jTextArea11.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextArea11.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea11.setLineWrap(true);
         jTextArea11.setRows(5);
         jTextArea11.setText("deals with the concepts and principles of various processes that have formed and continuously shape the Earth and the Universe.  Topics covered is to identify and explain the different processes (internal and external) that continuously shape the Earth, that have formed and affected the Philippine Islands, hazards of these Earth processes and come up with ways to mitigate and adapt to these said hazards and explain how the Solar System, the Stars and the Universe were formed.\n\n ");
         jTextArea11.setWrapStyleWord(true);
+        jTextArea11.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane21.setViewportView(jTextArea11);
+
+        jLabel32.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel32.setText("IS");
+        jLabel32.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel32.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel32.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel34.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel34.setText("MATH");
+        jLabel34.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel34.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel34.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel35.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel35.setText("ENG");
+        jLabel35.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel35.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel35.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel36.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("FIL");
+        jLabel36.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel36.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel36.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel37.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel37.setText("SS");
+        jLabel37.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel37.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel37.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel38.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel38.setText("PEHM");
+        jLabel38.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel38.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel38.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel39.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel39.setText("VALED");
+        jLabel39.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel39.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel39.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel40.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel40.setText("ADTECH");
+        jLabel40.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel40.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel40.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel41.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel41.setText("CS");
+        jLabel41.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel41.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel41.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jLabel42.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel42.setText("ES");
+        jLabel42.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel42.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel42.setPreferredSize(new java.awt.Dimension(240, 130));
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
         jPanel34.setLayout(jPanel34Layout);
@@ -1270,46 +1123,35 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addGap(260, 260, 260))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel34Layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
+                    .addGroup(jPanel34Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
                         .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel34Layout.createSequentialGroup()
-                                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel34Layout.createSequentialGroup()
-                                        .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jScrollPane14))
-                                    .addGroup(jPanel34Layout.createSequentialGroup()
-                                        .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jScrollPane15)))
-                                .addGap(10, 10, 10))
-                            .addGroup(jPanel34Layout.createSequentialGroup()
-                                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane12)
-                                    .addComponent(jScrollPane11)
-                                    .addComponent(jScrollPane18)
-                                    .addComponent(jScrollPane13)
-                                    .addComponent(jScrollPane19)
-                                    .addComponent(jScrollPane17)
-                                    .addComponent(jScrollPane20)))
-                            .addGroup(jPanel34Layout.createSequentialGroup()
-                                .addGap(256, 256, 256)
-                                .addComponent(jScrollPane21))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel34Layout.createSequentialGroup()
+                            .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane15)
+                            .addComponent(jScrollPane18)
+                            .addComponent(jScrollPane13)
+                            .addComponent(jScrollPane19)
+                            .addComponent(jScrollPane17)
+                            .addComponent(jScrollPane20)
+                            .addComponent(jScrollPane21)
+                            .addComponent(jScrollPane14)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane12)))
+                    .addGroup(jPanel34Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(jSeparator5)))
-                .addGap(46, 46, 46))
+                .addGap(60, 60, 60))
         );
         jPanel34Layout.setVerticalGroup(
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1320,51 +1162,60 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel34Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(49, 49, 49)
+                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel34Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(27, 27, 27)
-                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(64, 64, 64)
+                        .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(50, 50, 50)
+                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel34Layout.createSequentialGroup()
-                        .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(44, 44, 44)
-                        .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
-                                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(48, 48, 48)
-                                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel34Layout.createSequentialGroup()
-                                        .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(42, 42, 42)
-                                        .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(50, 50, 50)
-                                .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(58, 58, 58)
-                        .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50))
+                    .addGroup(jPanel34Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(67, 67, 67)))
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
+                        .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(64, 64, 64))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
+                        .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)))
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(254, Short.MAX_VALUE))
+                    .addGroup(jPanel34Layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel34Layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(82, 82, 82)
+                        .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(83, 83, 83)
+                        .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel34Layout.createSequentialGroup()
+                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel34);
@@ -1373,13 +1224,11 @@ public class GRADE7 extends javax.swing.JFrame {
         homepageScreen.setLayout(homepageScreenLayout);
         homepageScreenLayout.setHorizontalGroup(
             homepageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(homepageScreenLayout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1031, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)
         );
         homepageScreenLayout.setVerticalGroup(
             homepageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1457, Short.MAX_VALUE)
         );
 
         inputpageScreen.setBackground(new java.awt.Color(0, 0, 0));
@@ -1394,6 +1243,8 @@ public class GRADE7 extends javax.swing.JFrame {
 
         jSeparator6.setBackground(new java.awt.Color(130, 130, 130));
         jSeparator6.setForeground(new java.awt.Color(130, 130, 130));
+
+        mainPanel2.setBackground(new java.awt.Color(161, 156, 155));
 
         assessmentTable.setBackground(new java.awt.Color(221, 221, 221));
         assessmentTable.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
@@ -1429,10 +1280,18 @@ public class GRADE7 extends javax.swing.JFrame {
         jScrollPane8.setViewportView(assessmentTable);
 
         jLabel28.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(0, 0, 0));
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("SUBJECT: ");
 
         subjectComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INTEGRATED SCIENCE", "MATH", "ENGLISH", "FILIPINO", "SOCIAL SCIENCE", "PEHM", "ADTECH", "COMPUTER SCIENCE" }));
+        subjectComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subjectComboBoxActionPerformed(evt);
+            }
+        });
+
+        buttonPanel2.setBackground(new java.awt.Color(161, 156, 155));
 
         addRowButton.setText("ADD ASSESSMENT");
         addRowButton.addActionListener(new java.awt.event.ActionListener() {
@@ -1448,7 +1307,9 @@ public class GRADE7 extends javax.swing.JFrame {
             }
         });
 
-        calculateGradeLabel.setText("CALCULATE GRADE: ");
+        calculateGradeLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        calculateGradeLabel.setForeground(new java.awt.Color(0, 0, 0));
+        calculateGradeLabel.setText("GRADE: ");
 
         CLEAR.setText("CLEAR");
         CLEAR.addActionListener(new java.awt.event.ActionListener() {
@@ -1469,36 +1330,36 @@ public class GRADE7 extends javax.swing.JFrame {
         buttonPanel2Layout.setHorizontalGroup(
             buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(buttonPanel2Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(calculateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(51, 51, 51))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonPanel2Layout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(28, 28, 28)
-                .addComponent(SAVE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(84, 84, 84))
-            .addGroup(buttonPanel2Layout.createSequentialGroup()
                 .addGap(110, 110, 110)
-                .addComponent(calculateGradeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(134, 134, 134))
+                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(55, 55, 55)
+                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(buttonPanel2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(calculateGradeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(80, 80, 80))
+                    .addGroup(buttonPanel2Layout.createSequentialGroup()
+                        .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(calculateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(SAVE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(110, 110, 110))))
         );
         buttonPanel2Layout.setVerticalGroup(
             buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(buttonPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addRowButton)
-                    .addComponent(calculateButton))
-                .addGap(18, 18, 18)
+                    .addComponent(addRowButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(calculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(calculateGradeLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CLEAR)
-                    .addComponent(SAVE))
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                    .addComponent(SAVE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout mainPanel2Layout = new javax.swing.GroupLayout(mainPanel2);
@@ -1506,152 +1367,32 @@ public class GRADE7 extends javax.swing.JFrame {
         mainPanel2Layout.setHorizontalGroup(
             mainPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanel2Layout.createSequentialGroup()
-                .addGroup(mainPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane8))
-                    .addGroup(mainPanel2Layout.createSequentialGroup()
-                        .addGap(303, 303, 303)
-                        .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(subjectComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(169, 169, 169)))
-                .addContainerGap())
+                .addGap(360, 360, 360)
+                .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(subjectComboBox, 0, 0, Short.MAX_VALUE)
+                .addGap(360, 360, 360))
             .addGroup(mainPanel2Layout.createSequentialGroup()
                 .addGap(220, 220, 220)
                 .addComponent(buttonPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(214, 214, 214))
+                .addGap(220, 220, 220))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanel2Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jScrollPane8)
+                .addGap(40, 40, 40))
         );
         mainPanel2Layout.setVerticalGroup(
             mainPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanel2Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addGroup(mainPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel28)
-                    .addComponent(subjectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(mainPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(subjectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(buttonPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(31, Short.MAX_VALUE))
-        );
-
-        jTable4.setBackground(new java.awt.Color(221, 221, 221));
-        jTable4.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        jTable4.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "FORMATIVE ASSESSMENT", "ALTERNATIVE ASSESSMENT", "QUARTER EXAM "
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Float.class, java.lang.Float.class, java.lang.Float.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
-        jTable4.setDropMode(javax.swing.DropMode.INSERT_ROWS);
-        jTable4.setGridColor(new java.awt.Color(0, 0, 0));
-        jTable4.setRowHeight(30);
-        jTable4.setRowSelectionAllowed(false);
-        jTable4.setSelectionBackground(new java.awt.Color(161, 156, 155));
-        jTable4.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jTable4.setShowGrid(true);
-        jScrollPane16.setViewportView(jTable4);
-
-        jLabel11.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("PHYS 1");
-
-        javax.swing.GroupLayout PHYSLayout = new javax.swing.GroupLayout(PHYS);
-        PHYS.setLayout(PHYSLayout);
-        PHYSLayout.setHorizontalGroup(
-            PHYSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PHYSLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane16, javax.swing.GroupLayout.DEFAULT_SIZE, 664, Short.MAX_VALUE)
-                .addGap(26, 26, 26))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PHYSLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(183, 183, 183))
-        );
-        PHYSLayout.setVerticalGroup(
-            PHYSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PHYSLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
-        );
-
-        jTable5.setBackground(new java.awt.Color(221, 221, 221));
-        jTable5.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
-        jTable5.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "FORMATIVE ASSESSMENT", "ALTERNATIVE ASSESSMENT", "QUARTER EXAM "
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Float.class, java.lang.Float.class, java.lang.Float.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
-        jTable5.setDropMode(javax.swing.DropMode.INSERT_ROWS);
-        jTable5.setGridColor(new java.awt.Color(0, 0, 0));
-        jTable5.setRowHeight(30);
-        jTable5.setRowSelectionAllowed(false);
-        jTable5.setSelectionBackground(new java.awt.Color(161, 156, 155));
-        jTable5.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jTable5.setShowGrid(true);
-        jScrollPane22.setViewportView(jTable5);
-
-        jLabel12.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("MATH 1");
-
-        javax.swing.GroupLayout MATHLayout = new javax.swing.GroupLayout(MATH);
-        MATH.setLayout(MATHLayout);
-        MATHLayout.setHorizontalGroup(
-            MATHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MATHLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane22, javax.swing.GroupLayout.DEFAULT_SIZE, 652, Short.MAX_VALUE)
-                .addGap(26, 26, 26))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MATHLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(183, 183, 183))
-        );
-        MATHLayout.setVerticalGroup(
-            MATHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MATHLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
         );
 
         javax.swing.GroupLayout inputscreen2Layout = new javax.swing.GroupLayout(inputscreen2);
@@ -1664,17 +1405,10 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addGap(203, 203, 203))
             .addGroup(inputscreen2Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
-                .addGroup(inputscreen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(inputscreen2Layout.createSequentialGroup()
-                        .addComponent(jSeparator6)
-                        .addGap(46, 46, 46))
-                    .addGroup(inputscreen2Layout.createSequentialGroup()
-                        .addGroup(inputscreen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(MATH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(PHYS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addComponent(jSeparator6)
+                .addGap(46, 46, 46))
             .addGroup(inputscreen2Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(52, 52, 52)
                 .addComponent(mainPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(52, 52, 52))
         );
@@ -1687,26 +1421,20 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(mainPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(507, 507, 507)
-                .addComponent(PHYS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(MATH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(866, Short.MAX_VALUE))
         );
 
-        jScrollPane3.setViewportView(inputscreen2);
-
-        jScrollPane10.setViewportView(jScrollPane3);
+        jScrollPane10.setViewportView(inputscreen2);
 
         javax.swing.GroupLayout inputpageScreenLayout = new javax.swing.GroupLayout(inputpageScreen);
         inputpageScreen.setLayout(inputpageScreenLayout);
         inputpageScreenLayout.setHorizontalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 1031, Short.MAX_VALUE)
+            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)
         );
         inputpageScreenLayout.setVerticalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE)
+            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 1457, Short.MAX_VALUE)
         );
 
         progresspageScreen.setBackground(new java.awt.Color(0, 0, 0));
@@ -1764,7 +1492,7 @@ public class GRADE7 extends javax.swing.JFrame {
             pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pieLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
                 .addGap(20, 20, 20))
             .addGroup(pieLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
@@ -1908,7 +1636,7 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 811, Short.MAX_VALUE)
+                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 1143, Short.MAX_VALUE)
                 .addGap(31, 31, 31))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(352, 352, 352)
@@ -1948,7 +1676,7 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addComponent(LOAD)
                 .addGap(18, 18, 18)
                 .addComponent(CLEARDATA)
-                .addContainerGap(2012, Short.MAX_VALUE))
+                .addContainerGap(2000, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel5);
@@ -1957,13 +1685,11 @@ public class GRADE7 extends javax.swing.JFrame {
         progresspageScreen.setLayout(progresspageScreenLayout);
         progresspageScreenLayout.setHorizontalGroup(
             progresspageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 868, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)
         );
         progresspageScreenLayout.setVerticalGroup(
             progresspageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(progresspageScreenLayout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 753, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
         );
 
         finalpageScreen.setBackground(new java.awt.Color(57, 53, 54));
@@ -2013,7 +1739,7 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addGap(212, 212, 212)
                 .addGroup(finalpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(LOGOUT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
                     .addComponent(change, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(212, 212, 212))
@@ -2031,26 +1757,26 @@ public class GRADE7 extends javax.swing.JFrame {
                 .addComponent(change, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(908, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
         content.setLayout(contentLayout);
         contentLayout.setHorizontalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1224, Short.MAX_VALUE)
             .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(homepageScreen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(homepageScreen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(inputpageScreen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(inputpageScreen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(progresspageScreen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(finalpageScreen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(finalpageScreen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         contentLayout.setVerticalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 668, Short.MAX_VALUE)
+            .addGap(0, 1457, Short.MAX_VALUE)
             .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(homepageScreen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2065,7 +1791,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         getContentPane().add(dashboard, java.awt.BorderLayout.CENTER);
 
-        setSize(new java.awt.Dimension(772, 776));
+        setSize(new java.awt.Dimension(1325, 1565));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
@@ -2076,29 +1802,9 @@ public class GRADE7 extends javax.swing.JFrame {
         }
         else {
             menushowhide.setPreferredSize(new Dimension(325, menushowhide.getHeight()));
-        }
-        
-//         separator.setBorder(BorderFactory.createEmptyBorder(0, 20, 0, 0));
-         
+        }     
     }
     
-//    private void slideAnimation(JComponent component, int start, int end, int step) {
-//    Timer timer = new Timer(5, null); // Timer ticks every 5 milliseconds
-//    timer.addActionListener(new ActionListener() {
-//        int current = start;
-//
-//        @Override
-//        public void actionPerformed(ActionEvent e) {
-//            if (current != end) {
-//                current += (end > start) ? step : -step; // Increment or decrement
-//                component.setLocation(current, component.getY());
-//            } else {
-//                timer.stop(); // Stop the timer when done
-//            }
-//        }
-//    });
-//    timer.start(); // Start the animation
-//}
     private void btnHidemenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHidemenuMouseEntered
         
     }//GEN-LAST:event_btnHidemenuMouseEntered
@@ -2256,6 +1962,8 @@ public class GRADE7 extends javax.swing.JFrame {
     }//GEN-LAST:event_p6MouseClicked
 
     private void mathMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mathMouseClicked
+        jScrollPane1.getViewport().setViewPosition(new Point(0, 500));
+      
         sub1.setBackground(new Color(153,0,0));
         sub2.setBackground(new Color(153,0,0));
         sub3.setBackground(new Color(153,0,0));
@@ -2284,9 +1992,9 @@ public class GRADE7 extends javax.swing.JFrame {
         stat.setForeground(new Color(0,0,0));
         cs.setForeground(new Color(0,0,0));
         
-       
+          
     }//GEN-LAST:event_mathMouseClicked
-
+ 
     private void engMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_engMouseClicked
         sub1.setBackground(new Color(153,0,0));
         sub2.setBackground(new Color(153,0,0));
@@ -2529,6 +2237,7 @@ public class GRADE7 extends javax.swing.JFrame {
     }//GEN-LAST:event_sub12MouseExited
 
     private void chemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chemMouseClicked
+jScrollPane1.getViewport().setViewPosition(new Point(0, 300));
         sub1.setBackground(new Color(153,0,0));
         sub2.setBackground(new Color(0,0,0));
         sub3.setBackground(new Color(153,0,0));
@@ -2585,63 +2294,6 @@ public class GRADE7 extends javax.swing.JFrame {
         stat.setForeground(new Color(0,0,0));
         cs.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_allMouseClicked
-
-    private void addRowButtonaddRowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRowButtonaddRowButtonActionPerformed
-        if (tableModel == null) {
-            tableModel = (DefaultTableModel) assessmentTable.getModel();
-        }
-
-        addEmptyRow();
-    }//GEN-LAST:event_addRowButtonaddRowButtonActionPerformed
-
-    private void calculateButtoncalculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateButtoncalculateButtonActionPerformed
-
-        calculateAverage();
-    }//GEN-LAST:event_calculateButtoncalculateButtonActionPerformed
-
-    private void CLEARCLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CLEARCLEARActionPerformed
-        DefaultTableModel model = (DefaultTableModel) assessmentTable.getModel();
-        int rowCount = model.getRowCount();
-        int columnCount = model.getColumnCount();
-
-        for (int row = 0; row < rowCount; row++) {
-            for (int col = 0; col < columnCount; col++) {
-                model.setValueAt("", row, col); // Clear the cell content
-            }
-        }
-    }//GEN-LAST:event_CLEARCLEARActionPerformed
-
-    private void SAVESAVEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SAVESAVEActionPerformed
-        String subject = subjectComboBox.getSelectedItem().toString(); // Selected subject
-
-        try {
-
-            // Get the calculated overall average from calculateAverage()
-            double overallAverage = Double.parseDouble(calculateGradeLabel.getText().replace("Overall Average: ", "").replace("%", ""));
-
-            // Step 2: Save the calculated grade to the grades table
-            Connection con = DatabaseConnection.getConnection();
-            if (con == null) {
-                JOptionPane.showMessageDialog(this, "Database connection failed.");
-                return;
-            }
-
-            // SQL to insert or update the grade for the subject
-            String gradeSQL = "REPLACE INTO grades (subject, grade) VALUES (?, ?)";
-            PreparedStatement gradeStmt = con.prepareStatement(gradeSQL);
-            gradeStmt.setString(1, subject);
-            gradeStmt.setDouble(2, overallAverage);
-
-            // Execute the query to save the grade
-            gradeStmt.executeUpdate();
-
-            JOptionPane.showMessageDialog(this, "Grade saved successfully!");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(this, "Error saving grade: " + e.getMessage());
-        }
-    }//GEN-LAST:event_SAVESAVEActionPerformed
 
     private void LOADActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LOADActionPerformed
         loadGrades();
@@ -2772,6 +2424,67 @@ public class GRADE7 extends javax.swing.JFrame {
        GWA.setText(String.format("%.2f", gwa));
        
     }//GEN-LAST:event_GWABActionPerformed
+
+    private void subjectComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_subjectComboBoxActionPerformed
+
+    private void SAVESAVEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SAVESAVEActionPerformed
+        String subject = subjectComboBox.getSelectedItem().toString(); // Selected subject
+
+        try {
+
+            // Get the calculated overall average from calculateAverage()
+            double overallAverage = Double.parseDouble(calculateGradeLabel.getText().replace("Overall Average: ", "").replace("%", ""));
+
+            // Step 2: Save the calculated grade to the grades table
+            Connection con = DatabaseConnection.getConnection();
+            if (con == null) {
+                JOptionPane.showMessageDialog(this, "Database connection failed.");
+                return;
+            }
+
+            // SQL to insert or update the grade for the subject
+            String gradeSQL = "REPLACE INTO grades (subject, grade) VALUES (?, ?)";
+            PreparedStatement gradeStmt = con.prepareStatement(gradeSQL);
+            gradeStmt.setString(1, subject);
+            gradeStmt.setDouble(2, overallAverage);
+
+            // Execute the query to save the grade
+            gradeStmt.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Grade saved successfully!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Error saving grade: " + e.getMessage());
+        }
+    }//GEN-LAST:event_SAVESAVEActionPerformed
+
+    private void CLEARCLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CLEARCLEARActionPerformed
+        DefaultTableModel model = (DefaultTableModel) assessmentTable.getModel();
+        int rowCount = model.getRowCount();
+        int columnCount = model.getColumnCount();
+
+        for (int row = 0; row < rowCount; row++) {
+            for (int col = 0; col < columnCount; col++) {
+                model.setValueAt("", row, col); // Clear the cell content
+            }
+        }
+    }//GEN-LAST:event_CLEARCLEARActionPerformed
+
+    private void calculateButtoncalculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateButtoncalculateButtonActionPerformed
+
+        calculateAverage();
+    }//GEN-LAST:event_calculateButtoncalculateButtonActionPerformed
+
+    private void addRowButtonaddRowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRowButtonaddRowButtonActionPerformed
+        if (tableModel == null) {
+            tableModel = (DefaultTableModel) assessmentTable.getModel();
+        }
+
+        addEmptyRow();
+    }//GEN-LAST:event_addRowButtonaddRowButtonActionPerformed
         private void addEmptyRow() {
         Object[] rowData = new Object[assessmentTypes.length * 2]; // 6 columns: 3 types × (score + total)
         for (int j = 0; j < rowData.length; j++) {
@@ -3054,9 +2767,7 @@ public class GRADE7 extends javax.swing.JFrame {
     private javax.swing.JButton GWAB1;
     private javax.swing.JButton LOAD;
     private javax.swing.JButton LOGOUT;
-    private javax.swing.JPanel MATH;
     private javax.swing.JTextField PGWA;
-    private javax.swing.JPanel PHYS;
     private javax.swing.JButton SAVE;
     private javax.swing.JTextField TGWA;
     private javax.swing.JLabel accname;
@@ -3091,40 +2802,28 @@ public class GRADE7 extends javax.swing.JFrame {
     private javax.swing.JPanel inputpageScreen;
     private javax.swing.JPanel inputscreen2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel22;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
@@ -3134,16 +2833,13 @@ public class GRADE7 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane15;
-    private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane18;
     private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane21;
-    private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane23;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane8;
@@ -3152,8 +2848,6 @@ public class GRADE7 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JTable jTable4;
-    private javax.swing.JTable jTable5;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
