@@ -1,17 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package ace;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+import java.sql.ResultSet;
 import javax.swing.JOptionPane;
-// HI SAAAAAAAAAAAM HI HI TESTING PART 4 HAHAHAHAHAHAHA:'D
-// okay testing part 5; "commit directly to the master branch" option
-// testing clone/reflect thingy P5 T^T
-/**
- *
- * @author ACER
- */
+import ace.GlobalClass;
+
 public class SignUp extends javax.swing.JFrame {
 
     /**
@@ -46,11 +41,14 @@ public class SignUp extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         lage = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        user_id = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         COMP = new javax.swing.JButton();
         BACK = new javax.swing.JButton();
         RESET = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        PROCEED = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -124,7 +122,7 @@ public class SignUp extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         uname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -148,6 +146,8 @@ public class SignUp extends javax.swing.JFrame {
         lage.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lage.setText("AGE");
 
+        user_id.setText("USER_ID: ");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -167,6 +167,15 @@ public class SignUp extends javax.swing.JFrame {
                             .addComponent(uname, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(age))
                         .addGap(60, 60, 60))))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(200, 200, 200)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(122, 122, 122)
+                        .addComponent(user_id, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,15 +186,18 @@ public class SignUp extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(uname, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lage)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(user_id)
+                .addGap(16, 16, 16)
+                .addComponent(jLabel9)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("Impact", 1, 44)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CREATE AN ACCOUNT");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -193,7 +205,7 @@ public class SignUp extends javax.swing.JFrame {
         COMP.setBackground(new java.awt.Color(153, 0, 0));
         COMP.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 18)); // NOI18N
         COMP.setForeground(new java.awt.Color(255, 255, 255));
-        COMP.setText("COMPLETE");
+        COMP.setText("SAVE");
         COMP.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         COMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,34 +235,52 @@ public class SignUp extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/Untitled_design-removebg-preview (1).png"))); // NOI18N
         jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        PROCEED.setBackground(new java.awt.Color(153, 0, 0));
+        PROCEED.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 18)); // NOI18N
+        PROCEED.setForeground(new java.awt.Color(255, 255, 255));
+        PROCEED.setText("PROCEED");
+        PROCEED.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        PROCEED.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PROCEEDActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(360, 360, 360)
-                .addComponent(BACK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(105, 105, 105)
-                .addComponent(RESET, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(392, 392, 392))
-            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(200, 200, 200)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(60, 60, 60)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 382, Short.MAX_VALUE)
-                        .addGap(438, 438, 438))
+                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE)
+                        .addGap(426, 426, 426))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(109, 109, 109)
                         .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(200, 200, 200))))
+                        .addGap(259, 259, 259))))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(450, 450, 450)
-                .addComponent(COMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(483, 483, 483))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(360, 360, 360)
+                        .addComponent(BACK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(COMP, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(105, 105, 105)
+                        .addComponent(RESET, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(392, 392, 392))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(PROCEED, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -266,9 +296,11 @@ public class SignUp extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(24, 24, 24)
-                .addComponent(COMP, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(COMP, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PROCEED, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RESET, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BACK, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -308,27 +340,103 @@ public class SignUp extends javax.swing.JFrame {
     }//GEN-LAST:event_RESETActionPerformed
 
     private void COMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_COMPActionPerformed
-        
-        String Email = email.getText().trim();
-        String Uname = uname.getText().trim();
-        String Password = password.getText().trim();
-        String Age = age.getText();
-        String Name = name.getText();
-            
-            if(Email.isEmpty() || Uname.isEmpty() || Password.isEmpty() || Age.isEmpty() || Name.isEmpty() ){
-                JOptionPane.showMessageDialog(null, "Please input complete details.", "Warning!", JOptionPane.WARNING_MESSAGE);
+    // Collect user input
+String Email = email.getText().trim();
+String Uname = uname.getText().trim();
+String Name = name.getText().trim();  // Assuming nameField for user name input
+String Age = age.getText().trim();  // Assuming ageField for age input
+String Password = password.getText().trim();
+
+// If Password is empty, assign a default value (empty string or a placeholder)
+if (Password.isEmpty()) {
+    Password = "default_password"; // You can replace this with any placeholder value
+}
+
+// If Name is empty, assign a default name
+if (Name.isEmpty()) {
+    Name = "name";
+}
+
+// If Age is empty, assign a default age
+if (Age.isEmpty()) {
+    Age = "12"; // You can replace this with any default age you prefer
+}
+
+// Check for empty required fields (email, username)
+if (Email.isEmpty() || Uname.isEmpty()) {
+    JOptionPane.showMessageDialog(null, "Please input complete details for Email and Username.", "Warning!", JOptionPane.WARNING_MESSAGE);
+} else {
+    // Set up the database connection
+    Connection con = null;
+    try {
+        // Establish connection
+        con = DatabaseConnection.getAceDatabaseConnection();  // Use your method to get DB connection
+
+        if (con == null) {
+            JOptionPane.showMessageDialog(null, "Database connection failed!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        // SQL to insert user details into the 'users' table
+        String insertSQL = "INSERT INTO users (email, username, password, name, age) VALUES (?, ?, ?, ?, ?)";
+        PreparedStatement insertStmt = con.prepareStatement(insertSQL, Statement.RETURN_GENERATED_KEYS);
+
+        // Set the values for the PreparedStatement
+        insertStmt.setString(1, Email);
+        insertStmt.setString(2, Uname);
+        insertStmt.setString(3, Password);  // Insert the default password if it's empty
+        insertStmt.setString(4, Name);      // Insert the default name if it's empty
+        insertStmt.setString(5, Age);       // Insert the default age if it's empty
+
+        // Execute the insert statement
+        int rowsAffected = insertStmt.executeUpdate();
+
+        // If rows were inserted, retrieve the generated user_id
+        if (rowsAffected > 0) {
+            ResultSet generatedKeys = insertStmt.getGeneratedKeys();
+            if (generatedKeys.next()) {
+                int userId = generatedKeys.getInt(1); // Retrieve the generated user_id
+
+                // Print the generated user_id or use it
+                System.out.println("Generated User ID: " + userId);
+
+                // Now store this user_id and proceed with your next steps, e.g., navigating to the next screen
+                JOptionPane.showMessageDialog(null, "Registration successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
+                user_id.setText("User_Id: " + userId);
                 
-                
-            }else{
-                new GradeSelection().setVisible(true);
-                dispose(); 
-               
+                GlobalClass.nname = Name;
+
+
+            } else {
+                JOptionPane.showMessageDialog(null, "User ID could not be generated.", "Error", JOptionPane.ERROR_MESSAGE);
             }
+        } else {
+            JOptionPane.showMessageDialog(null, "Registration failed. Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+
+    } catch (Exception e) {
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(null, "Database error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+    } 
+    
+    
+}
+
+
+
+
+               
+            
     }//GEN-LAST:event_COMPActionPerformed
 
     private void ageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ageActionPerformed
+
+    private void PROCEEDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PROCEEDActionPerformed
+        new GradeSelection().setVisible(true);
+                dispose(); 
+    }//GEN-LAST:event_PROCEEDActionPerformed
 
     /**
      * @param args the command line arguments
@@ -368,6 +476,7 @@ public class SignUp extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BACK;
     private javax.swing.JButton COMP;
+    private javax.swing.JButton PROCEED;
     private javax.swing.JButton RESET;
     private javax.swing.JTextField age;
     private javax.swing.JTextField email;
@@ -379,6 +488,7 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -386,5 +496,6 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JTextField name;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField uname;
+    private javax.swing.JLabel user_id;
     // End of variables declaration//GEN-END:variables
 }

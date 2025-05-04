@@ -4,6 +4,9 @@
  */
 package ace;
 
+import java.util.jar.Attributes.Name;
+import ace.GlobalClass;
+
 /**
  *
  * @author AykAyz
@@ -16,6 +19,8 @@ public class smthsmtj extends javax.swing.JFrame {
     public smthsmtj() {
         initComponents();
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,16 +32,16 @@ public class smthsmtj extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        gradelevel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 102));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("WELCOME!");
+        gradelevel.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        gradelevel.setForeground(new java.awt.Color(255, 255, 255));
+        gradelevel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        gradelevel.setText("WELCOME!");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -44,14 +49,14 @@ public class smthsmtj extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(98, 98, 98)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(gradelevel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(80, 80, 80))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(133, 133, 133)
-                .addComponent(jLabel1)
+                .addComponent(gradelevel)
                 .addContainerGap(151, Short.MAX_VALUE))
         );
 
@@ -105,7 +110,7 @@ public class smthsmtj extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel gradelevel;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

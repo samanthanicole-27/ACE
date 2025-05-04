@@ -10,13 +10,12 @@ package ace;
  */
 public class GradeSelection extends javax.swing.JFrame {
 
-    /**
-     * Creates new form GRADESELECTION
-     */
     public GradeSelection() {
         initComponents();
         setExtendedState(GradeSelection.MAXIMIZED_BOTH);
     }
+    
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -118,7 +117,9 @@ public class GradeSelection extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void gradelevelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gradelevelActionPerformed
-           
+        String selectedGradeLevel = gradelevel.getSelectedItem().toString();
+        
+        GlobalClass.gradeLevel = selectedGradeLevel;
     }//GEN-LAST:event_gradelevelActionPerformed
 
     private void BACKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BACKActionPerformed
@@ -129,9 +130,7 @@ public class GradeSelection extends javax.swing.JFrame {
     private void CONTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CONTActionPerformed
        String selectedGrade = (String) gradelevel.getSelectedItem();
         if (selectedGrade.equals("GRADE 7")) {
-        
-        new GRADE8().setVisible(true);
-            dispose(); 
+         
         }else if(selectedGrade.equals("GRADE 8")) {
         
         new GRADE8().setVisible(true);

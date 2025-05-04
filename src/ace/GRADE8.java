@@ -28,6 +28,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import ace.DatabaseConnection;
+import ace.GlobalClass;
 import java.beans.Statement;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -37,6 +38,7 @@ import javax.swing.table.DefaultTableModel;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Connection;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.Icon;
@@ -54,11 +56,14 @@ public class GRADE8 extends javax.swing.JFrame {
     public GRADE8() {
         setExtendedState(JFrame.MAXIMIZED_BOTH);    
         initComponents();
-        assessmentTable.setVisible(false);    
-        setupTable();         
+        assessmentTable.setVisible(false);
+        menu.setVisible(true);
+              
     }
-   
+    
+    
     private void setupTable() {
+        assessmentTable.setVisible(true);    
         tableModel = (DefaultTableModel) assessmentTable.getModel();
         
         while (tableModel.getRowCount() > 0) {
@@ -68,6 +73,8 @@ public class GRADE8 extends javax.swing.JFrame {
         for (int i = 0; i < 5; i++) {
             addEmptyRow();
         }
+        
+        
         
        
         assessmentTable.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
@@ -102,7 +109,7 @@ public class GRADE8 extends javax.swing.JFrame {
         
         
     }
-    private double equivalent;
+    
 
 
     /**
@@ -126,7 +133,7 @@ public class GRADE8 extends javax.swing.JFrame {
         btnHidemenu = new javax.swing.JLabel();
         menuHide = new javax.swing.JPanel();
         pfp = new javax.swing.JPanel();
-        accname = new javax.swing.JLabel();
+        SUB = new javax.swing.JLabel();
         separator = new javax.swing.JPanel();
         sub1 = new javax.swing.JPanel();
         sub12 = new javax.swing.JPanel();
@@ -223,9 +230,10 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         TGWA = new javax.swing.JTextField();
         GWAB1 = new javax.swing.JButton();
-        GWAB = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         PGWA = new javax.swing.JTextField();
+        VALED = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         LOAD = new javax.swing.JButton();
@@ -234,11 +242,15 @@ public class GRADE8 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
         progressTable = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        DL = new javax.swing.JPanel();
+        DLA = new javax.swing.JTextField();
+        GWAB = new javax.swing.JButton();
         finalpageScreen = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         LOGOUT = new javax.swing.JButton();
-        change = new javax.swing.JButton();
+        create = new javax.swing.JButton();
         delete = new javax.swing.JButton();
 
         jMenuItem1.setText("jMenuItem1");
@@ -337,6 +349,7 @@ public class GRADE8 extends javax.swing.JFrame {
 
         menuHide.setBackground(new java.awt.Color(153, 0, 0));
 
+        pfp.setBackground(new java.awt.Color(204, 204, 255));
         pfp.setPreferredSize(new java.awt.Dimension(40, 40));
 
         javax.swing.GroupLayout pfpLayout = new javax.swing.GroupLayout(pfp);
@@ -350,11 +363,11 @@ public class GRADE8 extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
-        accname.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 12)); // NOI18N
-        accname.setText("Ayz Ocampos");
-        accname.addMouseListener(new java.awt.event.MouseAdapter() {
+        SUB.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
+        SUB.setText("GRADE 8");
+        SUB.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                accnameMouseClicked(evt);
+                SUBMouseClicked(evt);
             }
         });
 
@@ -414,7 +427,7 @@ public class GRADE8 extends javax.swing.JFrame {
             sub1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sub1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(sub12, javax.swing.GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE)
+                .addComponent(sub12, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
                 .addContainerGap())
             .addComponent(menuSub2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -718,17 +731,17 @@ public class GRADE8 extends javax.swing.JFrame {
         separator.setLayout(separatorLayout);
         separatorLayout.setHorizontalGroup(
             separatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sub3, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub4, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub5, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub6, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub7, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub8, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub9, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub10, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub3, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub4, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub5, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub6, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub7, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub8, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub9, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub10, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
             .addComponent(sub0, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(sub1, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-            .addComponent(sub2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addComponent(sub1, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+            .addComponent(sub2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
         );
         separatorLayout.setVerticalGroup(
             separatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -767,7 +780,8 @@ public class GRADE8 extends javax.swing.JFrame {
                         .addGap(22, 22, 22)
                         .addComponent(pfp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(accname))
+                        .addComponent(SUB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(31, 31, 31))
                     .addGroup(menuHideLayout.createSequentialGroup()
                         .addGap(36, 36, 36)
                         .addComponent(separator, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -782,10 +796,10 @@ public class GRADE8 extends javax.swing.JFrame {
                         .addComponent(pfp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(menuHideLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addComponent(accname)))
+                        .addComponent(SUB)))
                 .addGap(30, 30, 30)
                 .addComponent(separator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(815, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         menu.add(menuHide, java.awt.BorderLayout.CENTER);
@@ -799,7 +813,7 @@ public class GRADE8 extends javax.swing.JFrame {
 
         homepage.setBackground(new java.awt.Color(194, 194, 194));
 
-        btnHomepage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
+        btnHomepage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 20)); // NOI18N
         btnHomepage.setForeground(new java.awt.Color(57, 53, 54));
         btnHomepage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnHomepage.setText("Home");
@@ -834,7 +848,7 @@ public class GRADE8 extends javax.swing.JFrame {
 
         inputpage.setBackground(new java.awt.Color(194, 194, 194));
 
-        btnInputpage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
+        btnInputpage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 20)); // NOI18N
         btnInputpage.setForeground(new java.awt.Color(57, 53, 54));
         btnInputpage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnInputpage.setText("Input");
@@ -869,7 +883,7 @@ public class GRADE8 extends javax.swing.JFrame {
 
         progresspage.setBackground(new java.awt.Color(194, 194, 194));
 
-        btnProgresspage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
+        btnProgresspage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 20)); // NOI18N
         btnProgresspage.setForeground(new java.awt.Color(57, 53, 54));
         btnProgresspage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnProgresspage.setText("Progress");
@@ -904,7 +918,7 @@ public class GRADE8 extends javax.swing.JFrame {
 
         finalpage.setBackground(new java.awt.Color(194, 194, 194));
 
-        btnFinalpage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
+        btnFinalpage.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 20)); // NOI18N
         btnFinalpage.setForeground(new java.awt.Color(57, 53, 54));
         btnFinalpage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnFinalpage.setText("Final");
@@ -965,7 +979,7 @@ public class GRADE8 extends javax.swing.JFrame {
         dashboard.add(buttons, java.awt.BorderLayout.PAGE_END);
 
         content.setBackground(new java.awt.Color(255, 255, 255));
-        content.setLayout(new javax.swing.OverlayLayout(content));
+        content.setLayout(new java.awt.CardLayout());
 
         homepageScreen.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1086,7 +1100,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel32.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setText("IS");
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/INTEGRATEDSCIENCE.png"))); // NOI18N
         jLabel32.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel32.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel32.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1094,7 +1108,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel34.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel34.setText("MATH");
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/MATHEMATICS.png"))); // NOI18N
         jLabel34.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel34.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel34.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1102,7 +1116,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel35.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel35.setText("ENG");
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/ENGLISH.png"))); // NOI18N
         jLabel35.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel35.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel35.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1110,7 +1124,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel36.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setText("FIL");
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/FILIPINO.png"))); // NOI18N
         jLabel36.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel36.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel36.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1118,7 +1132,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel37.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel37.setText("SS");
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/SOCSCI.png"))); // NOI18N
         jLabel37.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel37.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel37.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1126,7 +1140,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel38.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel38.setText("PEHM");
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/PEHM.png"))); // NOI18N
         jLabel38.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel38.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel38.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1134,7 +1148,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel39.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel39.setText("VALED");
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/VALED.png"))); // NOI18N
         jLabel39.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel39.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel39.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1142,7 +1156,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel40.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(255, 255, 255));
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel40.setText("ADTECH");
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/ADTECH.png"))); // NOI18N
         jLabel40.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel40.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel40.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1150,7 +1164,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel41.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(255, 255, 255));
         jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel41.setText("CS");
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/CS.png"))); // NOI18N
         jLabel41.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel41.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel41.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1158,7 +1172,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel42.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel42.setText("ES");
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/ES.png"))); // NOI18N
         jLabel42.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel42.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel42.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1169,7 +1183,7 @@ public class GRADE8 extends javax.swing.JFrame {
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel34Layout.createSequentialGroup()
                 .addGap(260, 260, 260)
-                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 686, Short.MAX_VALUE)
+                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 694, Short.MAX_VALUE)
                 .addGap(260, 260, 260))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1278,10 +1292,10 @@ public class GRADE8 extends javax.swing.JFrame {
         );
         homepageScreenLayout.setVerticalGroup(
             homepageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1357, Short.MAX_VALUE)
         );
 
-        content.add(homepageScreen);
+        content.add(homepageScreen, "card2");
 
         inputpageScreen.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1296,7 +1310,7 @@ public class GRADE8 extends javax.swing.JFrame {
         jSeparator6.setBackground(new java.awt.Color(130, 130, 130));
         jSeparator6.setForeground(new java.awt.Color(130, 130, 130));
 
-        mainPanel2.setBackground(new java.awt.Color(151, 138, 122));
+        mainPanel2.setBackground(new java.awt.Color(153, 0, 0));
 
         assessmentTable.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 14)); // NOI18N
         assessmentTable.setForeground(new java.awt.Color(57, 53, 54));
@@ -1333,10 +1347,11 @@ public class GRADE8 extends javax.swing.JFrame {
         jScrollPane8.setViewportView(assessmentTable);
 
         jLabel28.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("SUBJECT: ");
 
+        subjectComboBox.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         subjectComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INTEGRATED SCIENCE", "MATH", "ENGLISH", "FILIPINO", "SOCIAL SCIENCE", "PEHM", "ADTECH", "COMPUTER SCIENCE", "EARTH SCIENCE" }));
         subjectComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1344,8 +1359,10 @@ public class GRADE8 extends javax.swing.JFrame {
             }
         });
 
-        buttonPanel2.setBackground(new java.awt.Color(151, 138, 122));
+        buttonPanel2.setBackground(new java.awt.Color(153, 0, 0));
 
+        addRowButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        addRowButton.setForeground(new java.awt.Color(153, 0, 0));
         addRowButton.setText("ADD ASSESSMENT");
         addRowButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1353,6 +1370,8 @@ public class GRADE8 extends javax.swing.JFrame {
             }
         });
 
+        calculateButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        calculateButton.setForeground(new java.awt.Color(153, 0, 0));
         calculateButton.setText("CALCULATE GRADE");
         calculateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1360,10 +1379,12 @@ public class GRADE8 extends javax.swing.JFrame {
             }
         });
 
-        calculateGradeLabel.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        calculateGradeLabel.setForeground(new java.awt.Color(0, 0, 0));
+        calculateGradeLabel.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        calculateGradeLabel.setForeground(new java.awt.Color(255, 255, 255));
         calculateGradeLabel.setText("GRADE: ");
 
+        CLEAR.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        CLEAR.setForeground(new java.awt.Color(153, 0, 0));
         CLEAR.setText("CLEAR");
         CLEAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1371,6 +1392,8 @@ public class GRADE8 extends javax.swing.JFrame {
             }
         });
 
+        SAVE.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        SAVE.setForeground(new java.awt.Color(153, 0, 0));
         SAVE.setText("SAVE");
         SAVE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1382,22 +1405,20 @@ public class GRADE8 extends javax.swing.JFrame {
         buttonPanel2.setLayout(buttonPanel2Layout);
         buttonPanel2Layout.setHorizontalGroup(
             buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(buttonPanel2Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonPanel2Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
                     .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(50, 50, 50)
-                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(buttonPanel2Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(calculateGradeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(80, 80, 80))
-                    .addGroup(buttonPanel2Layout.createSequentialGroup()
-                        .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(SAVE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(15, 15, 15))))
+                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(SAVE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE))
+                .addGap(15, 15, 15))
+            .addGroup(buttonPanel2Layout.createSequentialGroup()
+                .addGap(226, 226, 226)
+                .addComponent(calculateGradeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(238, 238, 238))
         );
         buttonPanel2Layout.setVerticalGroup(
             buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1406,13 +1427,12 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addRowButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(calculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(calculateGradeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(calculateGradeLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                    .addComponent(SAVE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CLEAR, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SAVE, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         javax.swing.GroupLayout mainPanel2Layout = new javax.swing.GroupLayout(mainPanel2);
@@ -1423,7 +1443,7 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addGap(360, 360, 360)
                 .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(subjectComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(subjectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(291, 291, 291))
             .addGroup(mainPanel2Layout.createSequentialGroup()
                 .addGap(220, 220, 220)
@@ -1440,7 +1460,7 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(mainPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel28)
-                    .addComponent(subjectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(subjectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -1454,7 +1474,7 @@ public class GRADE8 extends javax.swing.JFrame {
             inputscreen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(inputscreen2Layout.createSequentialGroup()
                 .addGap(203, 203, 203)
-                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, 812, Short.MAX_VALUE)
+                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
                 .addGap(203, 203, 203))
             .addGroup(inputscreen2Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
@@ -1474,7 +1494,7 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addComponent(mainPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(736, Short.MAX_VALUE))
+                .addContainerGap(725, Short.MAX_VALUE))
         );
 
         jScrollPane10.setViewportView(inputscreen2);
@@ -1487,10 +1507,10 @@ public class GRADE8 extends javax.swing.JFrame {
         );
         inputpageScreenLayout.setVerticalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 1356, Short.MAX_VALUE)
+            .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 1357, Short.MAX_VALUE)
         );
 
-        content.add(inputpageScreen);
+        content.add(inputpageScreen, "card3");
 
         progresspageScreen.setBackground(new java.awt.Color(0, 0, 0));
         progresspageScreen.setPreferredSize(new java.awt.Dimension(1163, 1131));
@@ -1511,78 +1531,95 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("OVERALL");
 
-        pie.setBackground(new java.awt.Color(151, 138, 122));
+        pie.setBackground(new java.awt.Color(153, 0, 0));
+        pie.setForeground(new java.awt.Color(255, 255, 255));
         pie.setPreferredSize(new java.awt.Dimension(150, 150));
 
         jLabel3.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("TENTATIVE CURRENT GWA:");
 
         TGWA.setEditable(false);
-        TGWA.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        TGWA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         TGWA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TGWAActionPerformed(evt);
             }
         });
 
-        GWAB1.setText("CALCULATE TENTATIVE GWA");
+        GWAB1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        GWAB1.setForeground(new java.awt.Color(153, 0, 0));
+        GWAB1.setText("CALCULATE");
         GWAB1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GWAB1ActionPerformed(evt);
             }
         });
 
-        GWAB.setText("CALCULATE CURRENT GWA");
-        GWAB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GWABActionPerformed(evt);
-            }
-        });
-
         jLabel2.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel2.setText("PREVIOUS GWA:");
 
         PGWA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        VALED.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        VALED.setForeground(new java.awt.Color(153, 0, 0));
+        VALED.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECT", "INC", "COMP" }));
+        VALED.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VALEDActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("VALED:");
 
         javax.swing.GroupLayout pieLayout = new javax.swing.GroupLayout(pie);
         pie.setLayout(pieLayout);
         pieLayout.setHorizontalGroup(
             pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pieLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(71, 71, 71)
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(TGWA, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pieLayout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(PGWA, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(71, 71, 71)
-                .addComponent(GWAB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(27, 27, 27)
-                .addComponent(GWAB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(51, 51, 51))
+                .addGroup(pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pieLayout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(PGWA)
+                        .addGap(111, 111, 111))
+                    .addGroup(pieLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pieLayout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(83, 83, 83)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(pieLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(TGWA)
+                        .addGap(36, 36, 36)
+                        .addComponent(GWAB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(69, 69, 69)
+                        .addComponent(VALED, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(59, 59, 59))
         );
         pieLayout.setVerticalGroup(
             pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pieLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addGap(30, 30, 30)
                 .addGroup(pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
-                    .addComponent(TGWA, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(GWAB1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(GWAB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PGWA, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PGWA, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(GWAB1)
+                    .addComponent(TGWA, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VALED, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         jLabel6.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
@@ -1596,6 +1633,8 @@ public class GRADE8 extends javax.swing.JFrame {
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("INDIVIDUAL GRADES");
 
+        LOAD.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LOAD.setForeground(new java.awt.Color(153, 0, 0));
         LOAD.setText("LOAD GRADES");
         LOAD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1603,6 +1642,8 @@ public class GRADE8 extends javax.swing.JFrame {
             }
         });
 
+        CLEARDATA.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        CLEARDATA.setForeground(new java.awt.Color(153, 0, 0));
         CLEARDATA.setText("CLEAR DATA");
         CLEARDATA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1611,14 +1652,13 @@ public class GRADE8 extends javax.swing.JFrame {
         });
 
         GWA.setEditable(false);
-        GWA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         GWA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GWAActionPerformed(evt);
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(151, 138, 122));
+        jPanel2.setBackground(new java.awt.Color(153, 0, 0));
 
         progressTable.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 17)); // NOI18N
         progressTable.setForeground(new java.awt.Color(57, 53, 54));
@@ -1676,6 +1716,58 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        DL.setBackground(new java.awt.Color(255, 255, 255));
+        DL.setForeground(new java.awt.Color(0, 102, 0));
+
+        javax.swing.GroupLayout DLLayout = new javax.swing.GroupLayout(DL);
+        DL.setLayout(DLLayout);
+        DLLayout.setHorizontalGroup(
+            DLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 87, Short.MAX_VALUE)
+        );
+        DLLayout.setVerticalGroup(
+            DLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 71, Short.MAX_VALUE)
+        );
+
+        DLA.setEditable(false);
+        DLA.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        DLA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(DL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(DLA)
+                .addGap(21, 21, 21))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(DL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(DLA, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        GWAB.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        GWAB.setForeground(new java.awt.Color(153, 0, 0));
+        GWAB.setText("CALCULATE GWA");
+        GWAB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GWABActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -1689,33 +1781,39 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(460, 460, 460))
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(328, 328, 328)
-                .addComponent(LOAD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(50, 50, 50)
-                .addComponent(CLEARDATA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(328, 328, 328))
-            .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addComponent(jSeparator4)
                 .addGap(46, 46, 46))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(342, 342, 342)
+                .addComponent(LOAD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(49, 49, 49)
+                .addComponent(CLEARDATA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(335, 335, 335))
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(482, 482, 482)
+                .addGap(55, 55, 55)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(66, 66, 66))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(411, 411, 411)
                 .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(GWA, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(489, 489, 489))
+                .addComponent(GWA)
+                .addGap(34, 34, 34)
+                .addComponent(GWAB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(375, 375, 375))
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(70, 70, 70))
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(469, 469, 469)
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(477, 477, 477))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(242, 242, 242)
-                .addComponent(pie, javax.swing.GroupLayout.DEFAULT_SIZE, 734, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(242, 242, 242))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(492, 492, 492)
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(488, 488, 488))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(227, 227, 227)
+                .addComponent(pie, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
+                .addGap(228, 228, 228))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1728,19 +1826,22 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addComponent(pie, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(GWA, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
+                    .addComponent(GWAB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel7)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(26, 26, 26)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LOAD, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(CLEARDATA, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(529, Short.MAX_VALUE))
+                .addContainerGap(440, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel5);
@@ -1750,15 +1851,15 @@ public class GRADE8 extends javax.swing.JFrame {
         progresspageScreenLayout.setHorizontalGroup(
             progresspageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(progresspageScreenLayout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1226, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
         progresspageScreenLayout.setVerticalGroup(
             progresspageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1356, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1357, Short.MAX_VALUE)
         );
 
-        content.add(progresspageScreen);
+        content.add(progresspageScreen, "card4");
 
         finalpageScreen.setBackground(new java.awt.Color(57, 53, 54));
 
@@ -1779,11 +1880,11 @@ public class GRADE8 extends javax.swing.JFrame {
             }
         });
 
-        change.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 30)); // NOI18N
-        change.setText("CHANGE ACCOUNT");
-        change.addActionListener(new java.awt.event.ActionListener() {
+        create.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 30)); // NOI18N
+        create.setText("CREATE NEW ACCOUNT");
+        create.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                changeActionPerformed(evt);
+                createActionPerformed(evt);
             }
         });
 
@@ -1808,7 +1909,7 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addGroup(finalpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(LOGOUT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
-                    .addComponent(change, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(create, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(212, 212, 212))
         );
@@ -1822,13 +1923,13 @@ public class GRADE8 extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(LOGOUT, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
-                .addComponent(change, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(create, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(799, Short.MAX_VALUE))
+                .addContainerGap(800, Short.MAX_VALUE))
         );
 
-        content.add(finalpageScreen);
+        content.add(finalpageScreen, "card5");
 
         dashboard.add(content, java.awt.BorderLayout.CENTER);
 
@@ -1872,9 +1973,9 @@ public class GRADE8 extends javax.swing.JFrame {
         }   
     }//GEN-LAST:event_btnHidemenuMouseClicked
 
-    private void accnameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accnameMouseClicked
+    private void SUBMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SUBMouseClicked
         new smthsmtj().setVisible(true);
-    }//GEN-LAST:event_accnameMouseClicked
+    }//GEN-LAST:event_SUBMouseClicked
 
     private void btnHomepageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomepageMouseClicked
         homepage.setBackground(new Color(130,130,130));
@@ -1908,6 +2009,8 @@ public class GRADE8 extends javax.swing.JFrame {
         inputpageScreen.setVisible(true);
         progresspageScreen.setVisible(false);
         finalpageScreen.setVisible(false);
+        
+        setupTable();   
     }//GEN-LAST:event_btnInputpageMouseClicked
 
     private void btnProgresspageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProgresspageMouseClicked
@@ -2109,19 +2212,127 @@ public class GRADE8 extends javax.swing.JFrame {
     }//GEN-LAST:event_sub1MouseExited
 
     private void LOGOUTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LOGOUTActionPerformed
-        LogIn login = new LogIn(); 
-        login.setVisible(true); 
-        this.dispose(); 
+        
+        int yess = JOptionPane.showConfirmDialog(this, 
+        "Are you sure you want to log-out of this account?", 
+        "Confirm Log-Out of Account", JOptionPane.YES_NO_OPTION);
+        if(yess == JOptionPane.YES_OPTION){
+            LogIn login = new LogIn(); 
+            login.setVisible(true); 
+            this.dispose(); 
+        }
+        
     }//GEN-LAST:event_LOGOUTActionPerformed
 
-    private void changeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeActionPerformed
-        SignUp signup = new SignUp(); 
-        signup.setVisible(true); 
-        this.dispose(); 
-    }//GEN-LAST:event_changeActionPerformed
+    private void createActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createActionPerformed
+        
+        int yesss =JOptionPane.showConfirmDialog(this, 
+        "Are you sure you want to create a new account and log-out of this account?", 
+        "Confirm Create new account", JOptionPane.YES_NO_OPTION);
+        if(yesss == JOptionPane.YES_OPTION){
+            SignUp signup = new SignUp(); 
+            signup.setVisible(true); 
+            this.dispose(); 
+        }
+        
+    }//GEN-LAST:event_createActionPerformed
 
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
-        // TODO add your handling code here:
+    int confirm = JOptionPane.showConfirmDialog(this, 
+        "Are you sure you want to delete your entire account and all associated data?", 
+        "Confirm Delete Account", JOptionPane.YES_NO_OPTION);
+
+    if (confirm != JOptionPane.YES_OPTION) {
+        return; // User cancelled
+    }
+
+    Connection con = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;
+
+    try {
+        // Get the userId from GlobalClass
+        int userId = GlobalClass.userId;
+
+        // Validate presence of user ID
+        if (userId == 0) {
+            JOptionPane.showMessageDialog(this, "User ID not set. Please log in.");
+            this.setVisible(false); // Hide the current window (optional)
+            LogIn loginFrame = new LogIn(); // Create the login frame
+            loginFrame.setVisible(true); // Show the login frame
+            return;
+        }
+
+        // Establish a connection to the database
+        con = DatabaseConnection.getAceDatabaseConnection();
+        if (con == null) {
+            JOptionPane.showMessageDialog(this, "Database connection failed.");
+            return;
+        }
+
+        // Check if the user exists in the 'users' table
+        String checkUserSql = "SELECT user_id FROM users WHERE user_id = ?";
+        pst = con.prepareStatement(checkUserSql);
+        pst.setInt(1, userId);
+        rs = pst.executeQuery();
+
+        // If no user is found, alert the user and return
+        if (!rs.next()) {
+            JOptionPane.showMessageDialog(this, "No account found with the specified user ID.");
+            return; // Exit as the account does not exist
+        }
+
+        // Start a transaction to ensure data consistency
+        con.setAutoCommit(false);
+
+        // Delete grades related to the user
+        String deleteGradesSql = "DELETE FROM grades WHERE user_id = ?";
+        pst = con.prepareStatement(deleteGradesSql);
+        pst.setInt(1, userId);
+        pst.executeUpdate();
+
+        // Delete the user's profile or account (assuming there's a table called 'users')
+        String deleteUserSql = "DELETE FROM users WHERE user_id = ?";
+        pst = con.prepareStatement(deleteUserSql);
+        pst.setInt(1, userId);
+        pst.executeUpdate();
+
+        // Commit the transaction
+        con.commit();
+
+        JOptionPane.showMessageDialog(this, "Your account and all associated data have been deleted successfully.");
+
+        // Optionally, clear UI table model or other components
+        DefaultTableModel model = (DefaultTableModel) progressTable.getModel();
+        model.setRowCount(0); // Clear the table
+
+        // Log the user out or perform any other necessary actions
+        // For example: GlobalClass.userId = 0; // Logging out user
+
+    } catch (SQLException ex) {
+        // Rollback if there's an error
+        try {
+            if (con != null) {
+                con.rollback();
+            }
+        } catch (SQLException rollbackEx) {
+            rollbackEx.printStackTrace();
+        }
+
+        ex.printStackTrace();
+        JOptionPane.showMessageDialog(this, "Error deleting account: " + ex.getMessage());
+    } finally {
+        try {
+            if (pst != null) pst.close();
+            if (rs != null) rs.close(); // Close the ResultSet
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
+
     }//GEN-LAST:event_deleteActionPerformed
 
     private void sub12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sub12MouseEntered
@@ -2209,7 +2420,7 @@ public class GRADE8 extends javax.swing.JFrame {
         ResultSet rs = null;
 
         try {
-            con = DatabaseConnection.getConnection();
+            con = DatabaseConnection.getAceDatabaseConnection();
             if (con == null) {
                 JOptionPane.showMessageDialog(this, "Failed to connect to database.");
                 return;
@@ -2238,7 +2449,7 @@ public class GRADE8 extends javax.swing.JFrame {
                 rs.close();
                 pst.close();
             }
-
+            double equivalent = 0.00;
             double weightedAverage = totalWeightedGrades / totalUnits;
 
             JOptionPane.showMessageDialog(this,
@@ -2246,7 +2457,7 @@ public class GRADE8 extends javax.swing.JFrame {
                     "Calculation Result", JOptionPane.INFORMATION_MESSAGE);
                     
                     double grade = weightedAverage;
-                     if (grade >= 96 && grade <= 100) {
+                     if (grade >= 96.00 && grade <= 100.00) {
                         equivalent = 1.00;
                     } else if (grade >= 90 && grade <= 95.99) {
                         equivalent = 1.25;
@@ -2296,44 +2507,130 @@ public class GRADE8 extends javax.swing.JFrame {
        double tgwa = Double.parseDouble(TGWA.getText());
        double gwa = (((pgwa * 1) + (tgwa * 2))/3);
        
-       GWA.setText(String.format("%.2f", gwa));
+       
+       
+       String selectedOption = (String) VALED.getSelectedItem();
+        
+       if(selectedOption.equals("SELECT")){
+           GWAB.setEnabled(false);
+           DLA.setText("SELECT VALED OPTION");
+       }else{
+           GWA.setText(String.format("%.2f", gwa));
+           
+           if(gwa <= 1.50){
+           DL.setBackground(java.awt.Color.GREEN);
+           DLA.setText("CONGRATULATIONS FOR BEING A DIRECTOR'S LISTER!");
+           DLA.setForeground(Color.green);
+       }else{
+           DL.setBackground(java.awt.Color.RED);
+           DLA.setText("THANK YOU FOR TRYING YOUR BEST!");
+           DLA.setForeground(Color.red);
+       }       
+       }
+       
        
     }//GEN-LAST:event_GWABActionPerformed
 
     private void subjectComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectComboBoxActionPerformed
-        // TODO add your handling code here:
+        DefaultTableModel model = (DefaultTableModel) assessmentTable.getModel();
+
+
+        String selected = (String) subjectComboBox.getSelectedItem();
+
+
+        switch (selected) {
+            case "INTEGRATED SCIENCE":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                break;
+            case "MATH":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                break;
+            case "ENGLISH":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                break;
+            case "FILIPINO":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                break;
+            case "SOCIAL SCIENCE":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                break;
+            case "COMPUTER SCIENCE":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                break;
+            case "PEHM":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)"});
+                break;
+            case "ADTECH":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)"});
+                break;
+            case "EARTH SCIENCE":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)","LONG TEST(total)" });
+                break;
+            default:
+                model.setColumnIdentifiers(new Object[]{"Column1", "Column2"});
+                break;
+        }
     }//GEN-LAST:event_subjectComboBoxActionPerformed
 
     private void SAVESAVEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SAVESAVEActionPerformed
-        String subject = subjectComboBox.getSelectedItem().toString(); // Selected subject
 
-        try {
+    // Get the selected subject from the combo box
+    String subject = subjectComboBox.getSelectedItem().toString(); // Selected subject
 
-            // Get the calculated overall average from calculateAverage()
-            double overallAverage = Double.parseDouble(calculateGradeLabel.getText().replace("Overall Average: ", "").replace("%", ""));
+    try {
+        // Parse the overall average from the label
+        String averageText = calculateGradeLabel.getText().replace("Overall Average: ", "").replace("%", "").trim();
+        double overallAverage = Double.parseDouble(averageText);
 
-            // Step 2: Save the calculated grade to the grades table
-            Connection con = DatabaseConnection.getConnection();
-            if (con == null) {
-                JOptionPane.showMessageDialog(this, "Database connection failed.");
-                return;
-            }
+        // Get user ID and grade level from GlobalClass
+        int userId = GlobalClass.userId;
+        String gradeLevel = GlobalClass.gradeLevel;
 
-            // SQL to insert or update the grade for the subject
-            String gradeSQL = "REPLACE INTO grades (subject, grade) VALUES (?, ?)";
-            PreparedStatement gradeStmt = con.prepareStatement(gradeSQL);
-            gradeStmt.setString(1, subject);
-            gradeStmt.setDouble(2, overallAverage);
-
-            // Execute the query to save the grade
-            gradeStmt.executeUpdate();
-
-            JOptionPane.showMessageDialog(this, "Grade saved successfully!");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(this, "Error saving grade: " + e.getMessage());
+        // Validate presence of user ID and grade level
+        if (userId == 0 || gradeLevel == null || gradeLevel.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "User ID or grade level not set. Please log in and select grade level.");
+            return;
         }
+
+        // Establish a database connection
+        Connection con = DatabaseConnection.getAceDatabaseConnection();
+        if (con == null) {
+            JOptionPane.showMessageDialog(this, "Database connection failed.");
+            return;
+        }
+
+        // SQL query to insert or update the grade for the selected grade level
+        String sql = "REPLACE INTO grades (subject, grade, user_id, grade_level) VALUES (?, ?, ?, ?)";
+
+        // Prepare the statement and set the parameters
+        PreparedStatement stmt = con.prepareStatement(sql);
+        stmt.setString(1, subject); // Set the subject
+        stmt.setDouble(2, overallAverage); // Set the overall grade (average)
+        stmt.setInt(3, userId); // Set the user ID
+        stmt.setString(4, gradeLevel); // Set the grade level (Grade 7, 8, 9, etc.)
+
+        // Execute the update or insert
+        stmt.executeUpdate();
+
+        // Show success message
+        JOptionPane.showMessageDialog(this, "Grade saved successfully!");
+
+    } catch (NumberFormatException e) {
+        // Handle invalid grade format
+        JOptionPane.showMessageDialog(this, "Invalid average grade format.");
+    } catch (SQLException e) {
+        // Handle SQL exceptions
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(this, "Error saving grade: " + e.getMessage());
+    } catch (Exception e) {
+        // Handle other exceptions
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(this, "Unexpected error: " + e.getMessage());
+    }
+
+
+
+
     }//GEN-LAST:event_SAVESAVEActionPerformed
 
     private void CLEARCLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CLEARCLEARActionPerformed
@@ -2344,6 +2641,8 @@ public class GRADE8 extends javax.swing.JFrame {
         for (int row = 0; row < rowCount; row++) {
             for (int col = 0; col < columnCount; col++) {
                 model.setValueAt("", row, col); // Clear the cell content
+                 calculateGradeLabel.setText("Overall Average: ");
+                 subjectComboBox.setSelectedIndex(0);
             }
         }
     }//GEN-LAST:event_CLEARCLEARActionPerformed
@@ -2477,6 +2776,7 @@ public class GRADE8 extends javax.swing.JFrame {
     private void btnHomepageMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomepageMouseEntered
         homepage.setBackground(new Color(130,130,130));    
         btnHomepage.setForeground(new Color(255,255,255));
+        
     }//GEN-LAST:event_btnHomepageMouseEntered
 
     private void btnHomepageMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomepageMouseExited
@@ -2513,160 +2813,206 @@ public class GRADE8 extends javax.swing.JFrame {
         finalpage.setBackground(new Color(194,194,194));    
         btnFinalpage.setForeground(new Color(57,53,54));
     }//GEN-LAST:event_btnFinalpageMouseExited
-        private void addEmptyRow() {
-        Object[] rowData = new Object[assessmentTypes.length * 2]; // 6 columns: 3 types × (score + total)
-        for (int j = 0; j < rowData.length; j++) {
-            rowData[j] = "";
+
+    private void VALEDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VALEDActionPerformed
+        String selectedOption = (String) VALED.getSelectedItem();
+                if ("INC".equals(selectedOption)) {
+                    
+                    GWAB.setBackground(Color.red);
+                    GWAB.setBackground(Color.white);
+                    GWAB.setEnabled(false); // Disable the button
+                    DLA.setText("CANNOT PROCEED IF INCOMPLETE");
+                    DLA.setForeground(Color.red);
+                } else if("COMP".equals(selectedOption)){
+                    GWAB.setEnabled(true);
+                    DLA.setText("");
+                }else if("SELECT".equals(selectedOption)){
+                    GWAB.setEnabled(false);
+                    DLA.setText("SELECT VALED OPTION");
+                    DLA.setForeground(Color.red);
+                }
+    }//GEN-LAST:event_VALEDActionPerformed
+    private void addEmptyRow() {
+        int numColumns = assessmentTypes.length * 2; // 6 columns
+        Object[] rowData = new Object[numColumns];
+
+        for (int j = 0; j < numColumns; j++) {
+            if (j == 0 || j == 2 || j == 4 || j == 1 || j == 3 || j == 5) { // If it's a score or total column
+                rowData[j] = null;
+            } else {
+                rowData[j] = ""; // For other columns (if any)
+            }
         }
         tableModel.addRow(rowData);
-    }
+}
     
     private void calculateAverage() {
-        try {
-            double[] categoryTotals = new double[assessmentTypes.length];
-            double[] categoryMaxTotals = new double[assessmentTypes.length];
-            
-            // Calculate sum and max total for each assessment category
-            for (int category = 0; category < assessmentTypes.length; category++) {
-                int scoreColIndex = category * 2;
-                int totalColIndex = category * 2 + 1;
-                
-                for (int row = 0; row < tableModel.getRowCount(); row++) {
-                    Object scoreObj = tableModel.getValueAt(row, scoreColIndex);
-                    Object totalObj = tableModel.getValueAt(row, totalColIndex);
-                    
-                    // Skip empty rows
-                    if ((scoreObj == null || scoreObj.toString().trim().isEmpty()) &&
-                        (totalObj == null || totalObj.toString().trim().isEmpty())) {
-                        continue;
+    try {
+        int columnCount = tableModel.getColumnCount();
+        int categoryCount = columnCount / 2;  // Assuming 2 columns per category (score and total)
+
+        double[] categoryTotals = new double[categoryCount];
+        double[] categoryMaxTotals = new double[categoryCount];
+
+        // Calculate sum and max total for each assessment category (formative, alternative, exam)
+        for (int category = 0; category < categoryCount; category++) {
+            int scoreColIndex = category * 2;  // Column index for the score
+            int totalColIndex = category * 2 + 1;  // Column index for the total
+
+            for (int row = 0; row < tableModel.getRowCount(); row++) {
+                Object scoreObj = tableModel.getValueAt(row, scoreColIndex);
+                Object totalObj = tableModel.getValueAt(row, totalColIndex);
+
+                // Skip empty rows
+                if ((scoreObj == null || scoreObj.toString().trim().isEmpty()) &&
+                    (totalObj == null || totalObj.toString().trim().isEmpty())) {
+                    continue;
+                }
+
+                try {
+                    double score = 0;
+                    double total = 100;
+
+                    if (scoreObj != null && !scoreObj.toString().trim().isEmpty()) {
+                        score = Double.parseDouble(scoreObj.toString());
                     }
-                    
-                    try {
-                        // Default total to 100 if not specified
-                        double score = 0;
-                        double total = 100;
-                        
-                        if (scoreObj != null && !scoreObj.toString().trim().isEmpty()) {
-                            score = Double.parseDouble(scoreObj.toString());
-                        }
-                        
-                        if (totalObj != null && !totalObj.toString().trim().isEmpty()) {
-                            total = Double.parseDouble(totalObj.toString());
-                        }
-                        
-                        // Validate input
-                        if (score < 0 || total <= 0 || score > total) {
-                            JOptionPane.showMessageDialog(this, 
-                                "Invalid entry at row " + (row + 1) + ", " + assessmentTypes[category] + 
-                                ".\nScore must be between 0 and total, and total must be greater than 0.", 
-                                "Input Error", JOptionPane.ERROR_MESSAGE);
-                            return;
-                        }
-                        
-                        categoryTotals[category] += score;
-                        categoryMaxTotals[category] += total;
-                        
-                    } catch (NumberFormatException ex) {
+
+                    if (totalObj != null && !totalObj.toString().trim().isEmpty()) {
+                        total = Double.parseDouble(totalObj.toString());
+                    }
+
+                    // Validate input (score must be between 0 and total, and total must be greater than 0)
+                    if (score < 0 || total <= 0 || score > total) {
                         JOptionPane.showMessageDialog(this, 
-                            "Invalid numeric entry at row " + (row + 1) + ", " + assessmentTypes[category] + 
-                            ". Please enter numeric values only.", 
+                            "Invalid entry at row " + (row + 1) + ", column " + (scoreColIndex + 1) +
+                            ".\nScore must be between 0 and total, and total must be greater than 0.", 
                             "Input Error", JOptionPane.ERROR_MESSAGE);
                         return;
                     }
-                }
-            }
-            
-            // Calculate percentage for each category
-            double[] categoryPercentages = new double[assessmentTypes.length];
-            for (int i = 0; i < assessmentTypes.length; i++) {
-                if (categoryMaxTotals[i] > 0) {
-                    categoryPercentages[i] = (categoryTotals[i] / categoryMaxTotals[i]) * 100;
-                }
-            }
-            
-            // Calculate weighted average using percentages
-            // Get weights based on selected subject
-            double[] weights;
-            String selectedSubject = (String) subjectComboBox.getSelectedItem();
-            
-            if ("INTEGRATED SCIENCE".equals(selectedSubject)) {
-                
-                weights = new double[]{0.25, 0.40, 0.35};
-            }else if ("MATHEMATICS".equals(selectedSubject)) {
-                
-                weights = new double[]{0.25, 0.25, 0.50};
-            }else if ("ENGLISH".equals(selectedSubject)) {
-               
-                weights = new double[]{0.25, 0.40, 0.35};
-            }else if ("FILIPINO".equals(selectedSubject)) {
-               
-                weights = new double[]{0.25, 0.40, 0.35};
-            }else if ("SOCIAL SCIENCE".equals(selectedSubject)) {
-               
-                weights = new double[]{0.25, 0.25, 0.50};
-            }else if ("PEHM".equals(selectedSubject)) {
-               
-                weights = new double[]{0.25, 0.25, 0.50};
-            }else if ("ADTECH".equals(selectedSubject)) {
-               
-                weights = new double[]{0.25, 0.40, 0.35};
-            }else if ("COMPUTER SCIENCE".equals(selectedSubject)) {
-               
-                weights = new double[]{0.25, 0.40, 0.35};
-            }else {
-                weights = new double[]{0.33, 0.33, 0.34}; // or default weights
-            }
 
-            double weightedSum = 0;
-            double weightSum = 0;
-            
-            StringBuilder resultDetails = new StringBuilder();
-            resultDetails.append("Assessment Results:\n\n");
-            
-            for (int i = 0; i < assessmentTypes.length; i++) {
-                if (categoryMaxTotals[i] > 0) {
-                    weightedSum += categoryPercentages[i] * weights[i];
-                    weightSum += weights[i];
-                    
-                    resultDetails.append(String.format("%s: %.1f / %.1f (%.2f%%)\n", 
-                        assessmentTypes[i], categoryTotals[i], categoryMaxTotals[i], categoryPercentages[i]));
+                    categoryTotals[category] += score;
+                    categoryMaxTotals[category] += total;
+
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(this, 
+                        "Invalid numeric entry at row " + (row + 1) + ", column " + (scoreColIndex + 1) +
+                        ". Please enter numeric values only.", 
+                        "Input Error", JOptionPane.ERROR_MESSAGE);
+                    return;
                 }
             }
-            
-            double overallAverage = weightSum > 0 ? weightedSum / weightSum : 0;
-            
-            // Display the result
-            calculateGradeLabel.setText(String.format("Overall Average: %.2f%%", overallAverage));
-            
-            // Show status based on grade
-            String status = "";
-            if (overallAverage >= 90) status = "Excellent";
-            else if (overallAverage >= 80) status = "Very Good";
-            else if (overallAverage >= 75) status = "Satisfactory";
-            else status = "Needs Improvement";
-            
-            resultDetails.append(String.format("\nOverall Weighted Average: %.2f%%\nStatus: %s", overallAverage, status));
-            
-            JOptionPane.showMessageDialog(this, resultDetails.toString(),
-                "Assessment Result", JOptionPane.INFORMATION_MESSAGE);
-            
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, 
-                "Error calculating average: " + ex.getMessage(),
-                "Calculation Error", JOptionPane.ERROR_MESSAGE);
         }
-    }
-    
-    private void loadGrades() {
 
+        // Calculate percentages for each category
+        double[] categoryPercentages = new double[categoryCount];
+        for (int i = 0; i < categoryCount; i++) {
+            if (categoryMaxTotals[i] > 0) {
+                categoryPercentages[i] = (categoryTotals[i] / categoryMaxTotals[i]) * 100;
+            }
+        }
+
+        // Get subject-based weights (to be customized as needed)
+        String selectedSubject = (String) subjectComboBox.getSelectedItem();
+        double[] weights;
+
+        Map<String, double[]> subjectWeights = new HashMap<>();
+        subjectWeights.put("INTEGRATED SCIENCE", new double[]{0.25, 0.25, 0.50});
+        subjectWeights.put("MATHEMATICS", new double[]{0.25, 0.25, 0.50});
+        subjectWeights.put("ENGLISH", new double[]{0.25, 0.40, 0.35});
+        subjectWeights.put("FILIPINO", new double[]{0.25, 0.40, 0.35});
+        subjectWeights.put("SOCIAL SCIENCE", new double[]{0.25, 0.25, 0.35});
+        subjectWeights.put("PEHM", new double[]{0.25, 0.75});
+        subjectWeights.put("ADTECH", new double[]{0.25, 0.75});
+        subjectWeights.put("COMPUTER SCIENCE", new double[]{0.25, 0.40, 0.35});
+        subjectWeights.put("EARTH SCIENCE", new double[]{0.25, 0.25, 0.50});
+
+        // Get the weights for the selected subject
+        if (subjectWeights.containsKey(selectedSubject) && subjectWeights.get(selectedSubject).length == categoryCount) {
+            weights = subjectWeights.get(selectedSubject);
+        } else {
+            // Default: equal weights for each category if no subject-specific weights are found
+            weights = new double[categoryCount];
+            double equalWeight = 1.0 / categoryCount;
+            Arrays.fill(weights, equalWeight);
+        }
+
+        // Weighted average calculation
+        double weightedSum = 0;
+        double weightSum = 0;
+
+        for (int i = 0; i < categoryCount; i++) {
+            if (categoryMaxTotals[i] > 0) {
+                weightedSum += categoryPercentages[i] * weights[i];
+                weightSum += weights[i];
+            }
+        }
+
+        double overallAverage = weightSum > 0 ? weightedSum / weightSum : 0;
+
+        // Display result
+        calculateGradeLabel.setText(String.format("Overall Average: %.2f%%", overallAverage));
+
+        String status;
+        if (overallAverage >= 90) status = "Excellent";
+        else if (overallAverage >= 80) status = "Very Good";
+        else if (overallAverage >= 75) status = "Satisfactory";
+        else status = "Needs Improvement";
+
+        // Optionally, display detailed results in a dialog
+        StringBuilder resultDetails = new StringBuilder("Assessment Results:\n\n");
+        for (int i = 0; i < categoryCount; i++) {
+            if (categoryMaxTotals[i] > 0) {
+                String categoryLabel = "Category " + (i + 1);
+                if (i < assessmentTypes.length) {
+                    categoryLabel = assessmentTypes[i];
+                }
+                resultDetails.append(String.format("%s: %.1f / %.1f (%.2f%%)\n", 
+                    categoryLabel, categoryTotals[i], categoryMaxTotals[i], categoryPercentages[i]));
+            }
+        }
+        resultDetails.append(String.format("\nOverall Weighted Average: %.2f%%\nStatus: %s", overallAverage, status));
+        
+        JOptionPane.showMessageDialog(this, resultDetails.toString(), "Assessment Result", JOptionPane.INFORMATION_MESSAGE);
+
+    } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Error calculating average: " + ex.getMessage(), "Calculation Error", JOptionPane.ERROR_MESSAGE);
+    }
+}
+    private void loadGrades() {
     try {
-        java.sql.Connection con = DatabaseConnection.getConnection();
-        PreparedStatement pst = con.prepareStatement("SELECT * FROM grades");
+        // Get the userId and gradeLevel from GlobalClass
+        int userId = GlobalClass.userId;
+        String gradeLevel = GlobalClass.gradeLevel;
+
+        // Validate presence of user ID and grade level
+        if (userId == 0) {
+            JOptionPane.showMessageDialog(this, "User ID not set. Please log in.");
+            this.setVisible(false); // Hide the current window (optional)
+            LogIn loginFrame = new LogIn(); // Create the login frame
+            loginFrame.setVisible(true); // Show the login frame
+            return;
+        }
+        
+        if (gradeLevel == null || gradeLevel.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Grade level not set. Please select a grade level.");
+            return;
+        }
+
+        // Get a connection to the database
+        Connection con = DatabaseConnection.getAceDatabaseConnection();
+
+        // Query to select grades for the specific user and grade level
+        String sql = "SELECT * FROM grades WHERE user_id = ? AND grade_level = ?";
+        PreparedStatement pst = con.prepareStatement(sql);
+        pst.setInt(1, userId);  // Set the userId parameter for the query
+        pst.setString(2, gradeLevel);  // Set the gradeLevel parameter for the query
         ResultSet rs = pst.executeQuery();
 
+        // Get the table model
         DefaultTableModel model = (DefaultTableModel) progressTable.getModel();
         model.setRowCount(0); // Clear existing rows to avoid duplicates
 
+        // Iterate through the result set and populate the table
         while (rs.next()) {
             String subject = rs.getString("subject");
             double grade = rs.getDouble("grade");
@@ -2688,16 +3034,18 @@ public class GRADE8 extends javax.swing.JFrame {
                 model.addRow(new Object[]{subject, grade}); // Add new row for the subject and grade
             }
         }
-        
+
     } catch (Exception e) {
         e.printStackTrace();
         JOptionPane.showMessageDialog(this, "Error loading grades: " + e.getMessage());
     }
-    }
-    
-    private void clearData() {
+}
+
+
+
+        private void clearData() {
         int confirm = JOptionPane.showConfirmDialog(this, 
-            "Are you sure you want to delete all data?", "Confirm Delete", JOptionPane.YES_NO_OPTION);
+            "Are you sure you want to delete all data for the current user?", "Confirm Delete", JOptionPane.YES_NO_OPTION);
 
         if (confirm != JOptionPane.YES_OPTION) {
             return; // User cancelled
@@ -2707,21 +3055,42 @@ public class GRADE8 extends javax.swing.JFrame {
         PreparedStatement pst = null;
 
         try {
-            con = DatabaseConnection.getConnection();
+            // Get the userId from GlobalClass
+            int userId = GlobalClass.userId;
+
+            // Validate presence of user ID
+            if (userId == 0) {
+                JOptionPane.showMessageDialog(this, "User ID not set. Please log in.");
+                this.setVisible(false); // Hide the current window (optional)
+                LogIn loginFrame = new LogIn(); // Create the login frame
+                loginFrame.setVisible(true); // Show the login frame
+                return;
+               
+            }
+
+            // Establish a connection to the database
+            con = DatabaseConnection.getAceDatabaseConnection();
             if (con == null) {
                 JOptionPane.showMessageDialog(this, "Database connection failed.");
                 return;
             }
 
-            // Delete all records from the grades table (adjust table name as needed)
-            String sql = "DELETE FROM grades";
+            // Delete all records for the current user (filter by user_id)
+            String sql = "DELETE FROM grades WHERE user_id = ?";
             pst = con.prepareStatement(sql);
+            pst.setInt(1, userId);  // Set the userId parameter for the query
 
             int rowsDeleted = pst.executeUpdate();
 
-            JOptionPane.showMessageDialog(this, rowsDeleted + " rows deleted successfully.");
-            
+            if (rowsDeleted > 0) {
+                JOptionPane.showMessageDialog(this, rowsDeleted + " rows deleted successfully for user ID: " + userId);
+            } else {
+                JOptionPane.showMessageDialog(this, "No data found for the current user.");
+            }
+
             // Optionally, clear UI table model or other components after deletion
+            DefaultTableModel model = (DefaultTableModel) progressTable.getModel();
+            model.setRowCount(0); // Clear the table
 
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -2734,9 +3103,11 @@ public class GRADE8 extends javax.swing.JFrame {
                 ex.printStackTrace();
             }
         }
+    }
+
+
     
-}
-    
+
     
     private int parseIntSafe(Object value) {
     try {
@@ -2798,6 +3169,8 @@ public class GRADE8 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CLEAR;
     private javax.swing.JButton CLEARDATA;
+    private javax.swing.JPanel DL;
+    private javax.swing.JTextField DLA;
     private javax.swing.JTextField GWA;
     private javax.swing.JButton GWAB;
     private javax.swing.JButton GWAB1;
@@ -2805,8 +3178,9 @@ public class GRADE8 extends javax.swing.JFrame {
     private javax.swing.JButton LOGOUT;
     private javax.swing.JTextField PGWA;
     private javax.swing.JButton SAVE;
+    private javax.swing.JLabel SUB;
     private javax.swing.JTextField TGWA;
-    private javax.swing.JLabel accname;
+    private javax.swing.JComboBox<String> VALED;
     private javax.swing.JButton addRowButton;
     private javax.swing.JTable assessmentTable;
     private javax.swing.JLabel btnFinalpage;
@@ -2818,8 +3192,8 @@ public class GRADE8 extends javax.swing.JFrame {
     private javax.swing.JPanel buttons;
     private javax.swing.JButton calculateButton;
     private javax.swing.JLabel calculateGradeLabel;
-    private javax.swing.JButton change;
     private javax.swing.JPanel content;
+    private javax.swing.JButton create;
     private javax.swing.JPanel dashboard;
     private javax.swing.JButton delete;
     private javax.swing.JPanel finalpage;
@@ -2850,7 +3224,9 @@ public class GRADE8 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel34;
