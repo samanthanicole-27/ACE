@@ -257,7 +257,7 @@
             <Container class="javax.swing.JPanel" name="pfp">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="cc" red="cc" type="rgb"/>
+                  <Color blue="99" green="ff" red="99" type="rgb"/>
                 </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[40, 40]"/>
@@ -282,7 +282,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="MS Reference Sans Serif" size="18" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="GRADE 8"/>
+                <Property name="text" type="java.lang.String" value="GRADE 7"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SUBMouseClicked"/>
@@ -1093,12 +1093,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" alignment="0" pref="1141" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" alignment="0" pref="1357" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="765" max="-2" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
@@ -1127,7 +1127,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
-                                  <Component id="jLabel31" pref="694" max="32767" attributes="0"/>
+                                  <Component id="jLabel31" pref="609" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -1143,7 +1143,6 @@
                                               <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel34" min="-2" pref="240" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
@@ -1154,7 +1153,6 @@
                                               <Component id="jScrollPane19" alignment="0" max="32767" attributes="0"/>
                                               <Component id="jScrollPane17" alignment="0" max="32767" attributes="0"/>
                                               <Component id="jScrollPane20" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="jScrollPane21" max="32767" attributes="0"/>
                                               <Component id="jScrollPane14" max="32767" attributes="0"/>
                                               <Component id="jScrollPane11" alignment="1" max="32767" attributes="0"/>
                                               <Component id="jScrollPane12" max="32767" attributes="0"/>
@@ -1230,8 +1228,6 @@
                                           <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
                                           <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                                          <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jScrollPane13" min="-2" pref="160" max="-2" attributes="0"/>
@@ -1241,11 +1237,9 @@
                                           <Component id="jScrollPane17" min="-2" pref="160" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                                           <Component id="jScrollPane20" min="-2" pref="160" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane21" min="-2" pref="160" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="406" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1289,7 +1283,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="Intermediate Algebra reinforces the basic concepts of Math 1 on operations, rational expressions, equations, inequalities and problem solving.  It introduces the concepts on the systems of linear equations in 2-3 variables, inequalities, radicals, relations and functions, linear functions, quadratic functions, absolute value functions, and real-life application of these functions which provide foundation in the relevance of math in the fields of science, technology and business."/>
+                                <Property name="text" type="java.lang.String" value="Elementary Algebra introduces students to sets, real number system, algebraic expressions, linear equations in one variable, linear inequalities in one variable, absolute value equations and inequalities in one variable, polynomials, rational algebraic expressions and equations, and problem solving as applications of the concepts learned and algebraic expressions acquired."/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1317,7 +1311,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="Exploring and Understanding the Interconnections of Science is an integrated course that will cover content topics in Biology, Chemistry and Physics.  It introduces foundations of science principles, within the following themes or areas:  Laws and Theories Governing Science; Matter and Energy; Movements, Patterns and Trends; and Impact of Global Warming to Biodiversity."/>
+                                <Property name="text" type="java.lang.String" value="Investigating Our Surroundings is an integrated introduction course in the natural sciences.  The course investigates the natural environment with a scientific approach.  Science process skills are given emphasis as they are applied to understand the natural phenomena and materials.  The course is geared towards greater appreciation of the scientific endeavor and its role in solving, by and large, pressing issues of the society."/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1341,7 +1335,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="Physical Education 2 (PE 2) &#x2014; PhysicalFitness and Basic Movement Education 2 focuses on preparing the Grade 8 students for active and successful participation in various physical activities by developing mastery over fundamental manipulative skills and developing adequate fitness level.&#xa;&#xa;Health Education 2 (Health 2) &#x2014; ME and my FRIENDS:  PreventiveDrug Education, Safety and First Aid focuses on safety, first aid, and preventive drug education.&#xa;&#xa;Music 2 &#x2014; Asian / African Music is the study of Asian/African music to better appreciate our immediate neighbors.  This includesthe music languages of several countries from South East Asia, Central Asia, South Asia, South West Asia, and Africa.  The course is also a review of fundamentals of music with added concepts related to the study of Asian and African music.&#xa;&#xa; "/>
+                                <Property name="text" type="java.lang.String" value="Physical Fitness and Basic Movement Education 1 focuses on preparing the Grade 7 students for active and successful participation in various physical activities by developing mastery of fundamental locomotor skills and developing adequate fitness level.&#xa;&#xa;Understanding Me: Growth and Development, Mental and Emotional Health is a one year course that focus on the changes on all the dimensions of health with emphasis on mental health problems and high-risk health practices during adolescence.&#xa;&#xa;Philippine Music is a review of the fundamentals of music with emphasis on Philippine Music.  Students will tackle the role and functions of music in Philippine life, its vocal and instrumental forms, performance practices, and recognition of distinguished composers.  The skills of singing, perceptive listening, playing instruments, moving to music, composing and improvising melodies will allow for diversified activities for the scholars.&#xa;&#xa;"/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1366,7 +1360,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="Communication Arts 2 and Afro-Asian Literature primarily aims to enhance the students&apos; proficiency in the five macro-skills and develop further their English communication ability.  In addition, it intends to expose and make students familiar with Asian and African literature in order to promote appreciation for Afro-Asian culture, as well as respect for and tolerance of cultural uniqueness and diversity."/>
+                                <Property name="text" type="java.lang.String" value="Communication Arts 2 and Afro-Asian Literature primarily aims to enhance the students&apos; proficiency in the five macro-skills and develop further their English communication ability.  In addition, it intends to expose and make students familiar with Asian and African literature in order to promote appreciation for Afro-Asian culture, as well as respect for and tolerance of cultural uniqueness and diversity.&#xa;&#xa; "/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1391,7 +1385,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="Kasanayan sa Komunikasyon at Pagpapahalaga sa Noli me Tangere, Wika, Panitikan at Iba pang Anyo ay sumasaklaw sa kasanayan sa epektibong pakikipagtalastasan sa pamamagitan ng paglinang sa kasanayan sa epektibong pakikipagtalastasan sa pamamagitan ng paglinang sa mga makrong kasanayan tulad ng pakikinig, pagsasalita, pagbasa, pagsulat, at panonood.  Bibigyan ng tuon and pag-aral sa iba&#x2019;t ibang akdang pampanitikan at pagpapahalaga sa akda ng dakilang bayani na si Dr. Jose Rizal, Noli Me Tangere, upang maitanim sa isipan ng mga mag-aaral ang simulain ng kalayaan at diwang nasyonalismo.  Gayundin, mabibigyan ng sapat na kasanayan at kamulatan ang mga mag-aaral sa pamamagitan ng mga kaalamang pangwika at pampanitikan upang maunawaan at mapahalagahan ang kanilang kultura na magsisilbing gabay sa pahubog ng kanilang katauhan at pagtugon sa mga hamon ng pagbabago sa lipunang kinabibilangan."/>
+                                <Property name="text" type="java.lang.String" value="Kasanayan sa Komunikasyon (Wika at Pagbasa) ay lumilinang sa limang makrong kasanayang pangkomunikatibo (pakikinig, pagsasalita, pagbasa, pagsulat at panonood) sa tulong ng pag-aaral ng wika at pagbasa at pagsusuri ng iba&#x2019;t ibang tekstong pampanitikan.  Napauunlad nito ang kahusayan sa pang-unawa, kultural literasi, at pagpapahalagang pampanitikan at pambansang pagkakakilanlanan bukod pa sa pagpapalawak ng pananaw ng mga mag-aaral sa buhay."/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1416,7 +1410,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value=" An Introduction to the Design Process - Resistant Materials and Electronics (Application and Evaluation) subject introduces the student to resistant materials and electronics.  This project based course is geared towards attaining a practical knowledge of the common materials, tools, and processes used in technology.  The skills involved include the design, planning and construction of various items, and the continuous application of the design process from the identification and formulation of problems to the evaluation of finished products.  This year is blocked in 2 areas:  resistant materials and electronics, the goal is for each student to experience 3 to 8 design projects per year.  Since the projects will be graded according to variety of benchmarked goals, a project can extend into the next quarter."/>
+                                <Property name="text" type="java.lang.String" value="An Introduction to the Principles of Design - Art and Drafting (Visual Perception &amp; Communication) subject is divided into two semestral offerings of Art and Drafting.&#xa;&#xa;Art is meant to teach students the elements and principles of design through freehand drawing, color harmonies and three-dimensional forms and serves as an avenue for creative growth.&#xa;&#xa;Drafting aims to teach students some conventions and protocols of technical drawing as it is used by designers, and provides opportunities to relate a finished product to the design process.  Practicing and developing these skills is expected to help students develop their ability to observe and record their environment, to visualize, and to communicate their ideas and designs effectively."/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1441,7 +1435,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="World History 1 maps the progress of man from prehistory to the pre-medieval, emphasizing the origins of human civilization, the early civilizations, the emerging school of thoughts and ideas, and the early empires of the world.  World History 1 will also be discussed in the light of geography, politics, culture, and especially science and technology, providing our students with the vocabulary and perspectives necessary to analyze and articulate what they know and think of global dynamics, patterns of history, and social and economic change.&#xa;&#xa; "/>
+                                <Property name="text" type="java.lang.String" value="Philippine History deals with the study of Philippine history in the context of different schools of thought with emphasis to Filipino perspective.  Specific topics include definition and purpose of studying history, Philippine geography, as well as political, economic, social, and cultural conditions of the country from ancient times up to the contemporary period.  It also strives to employ methodology in the study of Philippine history which would prepare students to embrace a greater role as conscientious future leaders of the country."/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1466,7 +1460,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="Knowing the Whys and Wherefores:  Toward Adolescent Wholeness.  VE 2 concerns young persons as bearers of values. With a growing desire to build their lives in an expanding world, the students develop, through cours, self deliberation for rendering judgements and decisions on novel, complex, or consequential matters. The meaning or purpose in life is presented not as a choice to be made on the outset, but as an outcome of a process of search and discernment. The values emphasized in this course are: setting one&#x2019;s life directions from keen observations and memories of events and circumstances; pursuing the good with a methodological approach, a sense of rightness, and a self-disciplined will; and seeking and protecting one&#x2019;s well being and wholeness."/>
+                                <Property name="text" type="java.lang.String" value="High School Beginnings:  Adolescent Living and Character Building.  As a first in a series of four Values Education (VE) courses, VE 1 advocates for values by advocating for the well-being of the bearers of values &#x2013; the students. Through VE 1, the new students of the PSHS will be are accompanied in the process of experiencing belongingness in school, participating confidently in school life, and liking and valuing oneself and others in school. The values emphasized in this course are: an objective self-knowledge that leads one to be comfortable and confident with oneself; an openness to personal growth that makes school learning constructive and healthy; and, kindness and generosity toward others made effective by one&#x2019;s astute grasp of persons and situations."/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1491,32 +1485,7 @@
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="Introduction to Computational Thinking is a subject where students are trained to develop solutions using computers for real-life applications.  The focus is on developing program logic formulation skills through pseudo-coding, flowcharting, and procedural or structured programming using a programming language."/>
-                                <Property name="wrapStyleWord" type="boolean" value="true"/>
-                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                                  <Insets value="[10, 10, 10, 10]"/>
-                                </Property>
-                              </Properties>
-                            </Component>
-                          </SubComponents>
-                        </Container>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane21">
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JTextArea" name="jTextArea11">
-                              <Properties>
-                                <Property name="editable" type="boolean" value="false"/>
-                                <Property name="columns" type="int" value="20"/>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Lucida Sans Unicode" size="14" style="0"/>
-                                </Property>
-                                <Property name="lineWrap" type="boolean" value="true"/>
-                                <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="deals with the concepts and principles of various processes that have formed and continuously shape the Earth and the Universe.  Topics covered is to identify and explain the different processes (internal and external) that continuously shape the Earth, that have formed and affected the Philippine Islands, hazards of these Earth processes and come up with ways to mitigate and adapt to these said hazards and explain how the Solar System, the Stars and the Universe were formed.&#xa;&#xa; "/>
+                                <Property name="text" type="java.lang.String" value="Foundations of Information and Communications Technology is the course that aims to mentor students to acquire relevant skills, gain fundamental knowledge, and exhibit ethics in the analysis, design, development, utilization and evaluation of outputs using information and communication technology systems."/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
                                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                                   <Insets value="[10, 10, 10, 10]"/>
@@ -1720,29 +1689,6 @@
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/ace/CS.png"/>
-                            </Property>
-                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[240, 130]"/>
-                            </Property>
-                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[240, 130]"/>
-                            </Property>
-                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[240, 130]"/>
-                            </Property>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel42">
-                          <Properties>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Impact" size="24" style="0"/>
-                            </Property>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                            </Property>
-                            <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/ace/ES.png"/>
                             </Property>
                             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[240, 130]"/>
@@ -1966,7 +1912,7 @@
                                   <Font name="Segoe UI" size="18" style="1"/>
                                 </Property>
                                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                                  <StringArray count="9">
+                                  <StringArray count="8">
                                     <StringItem index="0" value="INTEGRATED SCIENCE"/>
                                     <StringItem index="1" value="MATH"/>
                                     <StringItem index="2" value="ENGLISH"/>
@@ -1975,7 +1921,6 @@
                                     <StringItem index="5" value="PEHM"/>
                                     <StringItem index="6" value="ADTECH"/>
                                     <StringItem index="7" value="COMPUTER SCIENCE"/>
-                                    <StringItem index="8" value="EARTH SCIENCE"/>
                                   </StringArray>
                                 </Property>
                               </Properties>
@@ -1999,13 +1944,13 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="addRowButton" pref="300" max="32767" attributes="0"/>
+                                              <Component id="addRowButton" pref="299" max="32767" attributes="0"/>
                                               <Component id="CLEAR" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Component id="SAVE" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="calculateButton" alignment="0" pref="306" max="32767" attributes="0"/>
+                                              <Component id="calculateButton" alignment="0" pref="305" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                       </Group>
@@ -2708,9 +2653,10 @@
                           <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="LOGOUT" max="32767" attributes="0"/>
-                              <Component id="jLabel1" alignment="1" pref="800" max="32767" attributes="0"/>
+                              <Component id="jLabel1" alignment="1" pref="802" max="32767" attributes="0"/>
                               <Component id="create" max="32767" attributes="0"/>
                               <Component id="delete" max="32767" attributes="0"/>
+                              <Component id="CHANGE" alignment="1" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
                       </Group>
@@ -2725,11 +2671,13 @@
                           <Component id="jSeparator1" min="-2" pref="15" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="LOGOUT" min="-2" pref="109" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Component id="create" min="-2" pref="109" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="delete" min="-2" pref="109" max="-2" attributes="0"/>
-                          <EmptySpace pref="800" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="CHANGE" min="-2" pref="109" max="-2" attributes="0"/>
+                          <EmptySpace pref="686" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2791,6 +2739,17 @@
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="CHANGE">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans Unicode" size="30" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="CHANGE GRADE LEVEL"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CHANGEActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>

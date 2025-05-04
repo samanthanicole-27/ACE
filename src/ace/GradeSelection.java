@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package ace;
 
-/**
- *
- * @author ACER
- */
+import ace.GRADE8;
+import ace.GlobalClass;
+import ace.LoginOrSignUp;
+
+
+
 public class GradeSelection extends javax.swing.JFrame {
 
     public GradeSelection() {
@@ -130,20 +128,20 @@ public class GradeSelection extends javax.swing.JFrame {
     private void CONTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CONTActionPerformed
        String selectedGrade = (String) gradelevel.getSelectedItem();
         if (selectedGrade.equals("GRADE 7")) {
-         
+         new GRADE7().setVisible(true);
+            dispose(); 
         }else if(selectedGrade.equals("GRADE 8")) {
         
         new GRADE8().setVisible(true);
-            dispose(); }
-//        }else if(selectedGrade.equals("GRADE 9")) {
-//        
-//        new GRADE9().setVisible(true);
-//            dispose(); 
-//        }else if(selectedGrade.equals("GRADE 10")) {
-//        
-//        new GRADE10().setVisible(true);
-//            dispose(); 
-//        }
+            dispose(); 
+        }else if(selectedGrade.equals("GRADE 9")) {
+        
+        new GRADE9().setVisible(true);
+            dispose(); 
+        }else if(selectedGrade.equals("GRADE 10")) {    
+        new GRADE10().setVisible(true);
+            dispose(); 
+        }
     }//GEN-LAST:event_CONTActionPerformed
 
     /**

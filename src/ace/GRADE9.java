@@ -252,6 +252,7 @@ public class GRADE9 extends javax.swing.JFrame {
         LOGOUT = new javax.swing.JButton();
         create = new javax.swing.JButton();
         delete = new javax.swing.JButton();
+        CHANGE = new javax.swing.JButton();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -349,7 +350,7 @@ public class GRADE9 extends javax.swing.JFrame {
 
         menuHide.setBackground(new java.awt.Color(153, 0, 0));
 
-        pfp.setBackground(new java.awt.Color(204, 204, 255));
+        pfp.setBackground(new java.awt.Color(153, 153, 153));
         pfp.setPreferredSize(new java.awt.Dimension(40, 40));
 
         javax.swing.GroupLayout pfpLayout = new javax.swing.GroupLayout(pfp);
@@ -364,7 +365,7 @@ public class GRADE9 extends javax.swing.JFrame {
         );
 
         SUB.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        SUB.setText("GRADE 8");
+        SUB.setText("GRADE 9");
         SUB.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SUBMouseClicked(evt);
@@ -1352,7 +1353,7 @@ public class GRADE9 extends javax.swing.JFrame {
         jLabel28.setText("SUBJECT: ");
 
         subjectComboBox.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        subjectComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INTEGRATED SCIENCE", "MATH", "ENGLISH", "FILIPINO", "SOCIAL SCIENCE", "PEHM", "ADTECH", "COMPUTER SCIENCE", "EARTH SCIENCE" }));
+        subjectComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CHEMISTRY", "BIOLOGY", "PHYSICS", "MATH", "ENGLISH", "FILIPINO", "SOCIAL SCIENCE", "PEHM", "STATISTICS", "COMPUTER SCIENCE" }));
         subjectComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 subjectComboBoxActionPerformed(evt);
@@ -1408,12 +1409,12 @@ public class GRADE9 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonPanel2Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)
                     .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(50, 50, 50)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(SAVE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE))
+                    .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE))
                 .addGap(15, 15, 15))
             .addGroup(buttonPanel2Layout.createSequentialGroup()
                 .addGap(226, 226, 226)
@@ -1896,6 +1897,14 @@ public class GRADE9 extends javax.swing.JFrame {
             }
         });
 
+        CHANGE.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 30)); // NOI18N
+        CHANGE.setText("CHANGE GRADE LEVEL");
+        CHANGE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CHANGEActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout finalpageScreenLayout = new javax.swing.GroupLayout(finalpageScreen);
         finalpageScreen.setLayout(finalpageScreenLayout);
         finalpageScreenLayout.setHorizontalGroup(
@@ -1908,9 +1917,10 @@ public class GRADE9 extends javax.swing.JFrame {
                 .addGap(212, 212, 212)
                 .addGroup(finalpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(LOGOUT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 802, Short.MAX_VALUE)
                     .addComponent(create, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CHANGE, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(212, 212, 212))
         );
         finalpageScreenLayout.setVerticalGroup(
@@ -1922,11 +1932,13 @@ public class GRADE9 extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(LOGOUT, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
+                .addGap(26, 26, 26)
                 .addComponent(create, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
+                .addGap(30, 30, 30)
                 .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(800, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addComponent(CHANGE, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(686, Short.MAX_VALUE))
         );
 
         content.add(finalpageScreen, "card5");
@@ -2449,7 +2461,7 @@ public class GRADE9 extends javax.swing.JFrame {
                 rs.close();
                 pst.close();
             }
-            double equivalent = 0.00;
+            double equivalent = 1.00;
             double weightedAverage = totalWeightedGrades / totalUnits;
 
             JOptionPane.showMessageDialog(this,
@@ -2479,6 +2491,7 @@ public class GRADE9 extends javax.swing.JFrame {
                         equivalent = 4.00;
                     } else if (grade < 40) {
                         equivalent = 5.00;
+                    
                         
         }
                     
@@ -2519,7 +2532,7 @@ public class GRADE9 extends javax.swing.JFrame {
            
            if(gwa <= 1.50){
            DL.setBackground(java.awt.Color.GREEN);
-           DLA.setText("CONGRATULATIONS FOR BEING A DIRECTOR'S LISTER!");
+           DLA.setText("CONGRATULATIONS! YOU'RE PART OF THE DIRECTOR'S LIST!");
            DLA.setForeground(Color.green);
        }else{
            DL.setBackground(java.awt.Color.RED);
@@ -2832,6 +2845,17 @@ public class GRADE9 extends javax.swing.JFrame {
                     DLA.setForeground(Color.red);
                 }
     }//GEN-LAST:event_VALEDActionPerformed
+
+    private void CHANGEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHANGEActionPerformed
+        int yessss =JOptionPane.showConfirmDialog(this,
+            "Are you sure you want to change grade level?",
+            "Confirm Create change grade level", JOptionPane.YES_NO_OPTION);
+        if(yessss == JOptionPane.YES_OPTION){
+            GradeSelection gradeselection = new GradeSelection();
+            gradeselection.setVisible(true);
+            this.dispose();
+        }
+    }//GEN-LAST:event_CHANGEActionPerformed
     private void addEmptyRow() {
         int numColumns = assessmentTypes.length * 2; // 6 columns
         Object[] rowData = new Object[numColumns];
@@ -2978,7 +3002,7 @@ public class GRADE9 extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Error calculating average: " + ex.getMessage(), "Calculation Error", JOptionPane.ERROR_MESSAGE);
     }
 }
-    private void loadGrades() {
+private void loadGrades() {
     try {
         // Get the userId and gradeLevel from GlobalClass
         int userId = GlobalClass.userId;
@@ -2987,9 +3011,6 @@ public class GRADE9 extends javax.swing.JFrame {
         // Validate presence of user ID and grade level
         if (userId == 0) {
             JOptionPane.showMessageDialog(this, "User ID not set. Please log in.");
-            this.setVisible(false); // Hide the current window (optional)
-            LogIn loginFrame = new LogIn(); // Create the login frame
-            loginFrame.setVisible(true); // Show the login frame
             return;
         }
         
@@ -3005,7 +3026,7 @@ public class GRADE9 extends javax.swing.JFrame {
         String sql = "SELECT * FROM grades WHERE user_id = ? AND grade_level = ?";
         PreparedStatement pst = con.prepareStatement(sql);
         pst.setInt(1, userId);  // Set the userId parameter for the query
-        pst.setString(2, gradeLevel);  // Set the gradeLevel parameter for the query
+        pst.setString(2, gradeLevel);  // Set the dynamic gradeLevel parameter for the query
         ResultSet rs = pst.executeQuery();
 
         // Get the table model
@@ -3040,6 +3061,7 @@ public class GRADE9 extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Error loading grades: " + e.getMessage());
     }
 }
+
 
 
 
@@ -3173,38 +3195,6 @@ public class GRADE9 extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -3215,6 +3205,7 @@ public class GRADE9 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CHANGE;
     private javax.swing.JButton CLEAR;
     private javax.swing.JButton CLEARDATA;
     private javax.swing.JPanel DL;
