@@ -204,6 +204,9 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
+        jScrollPane22 = new javax.swing.JScrollPane();
+        jTextArea12 = new javax.swing.JTextArea();
+        jLabel43 = new javax.swing.JLabel();
         inputpageScreen = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         inputscreen2 = new javax.swing.JPanel();
@@ -409,7 +412,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub2.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub2.setText("MATH 2");
+        menuSub2.setText("CHEMISTRY 2");
         menuSub2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub2MouseClicked(evt);
@@ -446,7 +449,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub3.setText("ENGLISH 2");
+        menuSub3.setText("PHYSICS 2");
         menuSub3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub3MouseClicked(evt);
@@ -475,7 +478,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub4.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub4.setText("FILIPINO 2");
+        menuSub4.setText("MATH 4");
         menuSub4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub4MouseClicked(evt);
@@ -504,7 +507,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub5.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub5.setText("SOC.SCI. 2");
+        menuSub5.setText("ENGLISH 4");
         menuSub5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub5MouseClicked(evt);
@@ -533,7 +536,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub6.setText("PEHM 2");
+        menuSub6.setText("FILIPINO 4");
         menuSub6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub6MouseClicked(evt);
@@ -562,7 +565,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub7.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub7.setText("VALED 2");
+        menuSub7.setText("SOC.SCI. 4");
         menuSub7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub7MouseClicked(evt);
@@ -591,7 +594,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub8.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub8.setText("ADTECH 2");
+        menuSub8.setText("PEHM 4");
         menuSub8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub8MouseClicked(evt);
@@ -620,7 +623,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub9.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub9.setText("COMP.SCI. 2");
+        menuSub9.setText("VALED 4");
         menuSub9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub9MouseClicked(evt);
@@ -649,7 +652,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub10.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub10.setText("EARTH.SCI.");
+        menuSub10.setText("RESEARCH 1");
         menuSub10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub10MouseClicked(evt);
@@ -678,9 +681,16 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub11.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        menuSub11.setText("COMP.SCI. 4");
         menuSub11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                menuSub11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                menuSub11MouseExited(evt);
             }
         });
 
@@ -699,7 +709,7 @@ public class GRADE10 extends javax.swing.JFrame {
 
         menuSub1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub1.setText("INT.SCI. 2");
+        menuSub1.setText("BIOLOGY 2");
         menuSub1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub1MouseClicked(evt);
@@ -836,7 +846,7 @@ public class GRADE10 extends javax.swing.JFrame {
             homepageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homepageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnHomepage, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                .addComponent(btnHomepage, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
                 .addContainerGap())
         );
         homepageLayout.setVerticalGroup(
@@ -871,7 +881,7 @@ public class GRADE10 extends javax.swing.JFrame {
             inputpageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(inputpageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnInputpage, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
+                .addComponent(btnInputpage, javax.swing.GroupLayout.DEFAULT_SIZE, 289, Short.MAX_VALUE)
                 .addContainerGap())
         );
         inputpageLayout.setVerticalGroup(
@@ -906,7 +916,7 @@ public class GRADE10 extends javax.swing.JFrame {
             progresspageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(progresspageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnProgresspage, javax.swing.GroupLayout.DEFAULT_SIZE, 292, Short.MAX_VALUE)
+                .addComponent(btnProgresspage, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addContainerGap())
         );
         progresspageLayout.setVerticalGroup(
@@ -941,7 +951,7 @@ public class GRADE10 extends javax.swing.JFrame {
             finalpageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(finalpageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnFinalpage, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
+                .addComponent(btnFinalpage, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE)
                 .addContainerGap())
         );
         finalpageLayout.setVerticalGroup(
@@ -987,7 +997,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jScrollPane1.setPreferredSize(new java.awt.Dimension(1224, 1356));
 
         jPanel34.setBackground(new java.awt.Color(57, 53, 54));
-        jPanel34.setPreferredSize(new java.awt.Dimension(805, 2400));
+        jPanel34.setPreferredSize(new java.awt.Dimension(805, 2600));
 
         jLabel31.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 24)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
@@ -1002,7 +1012,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Intermediate Algebra reinforces the basic concepts of Math 1 on operations, rational expressions, equations, inequalities and problem solving.  It introduces the concepts on the systems of linear equations in 2-3 variables, inequalities, radicals, relations and functions, linear functions, quadratic functions, absolute value functions, and real-life application of these functions which provide foundation in the relevance of math in the fields of science, technology and business.");
+        jTextArea1.setText("Introduction to Organic Chemistry / General Inorganic Chemistry 2 provides an overview of some topics in the different fields of chemistry, including organic chemistry.  It focuses on analytical and physical chemistry both in theories and applications to help students understand the role of chemistry in society and covers the following topics:  organic chemistry, chemical kinetics, chemical equilibrium, acids and bases, and electrochemistry.  Quantitative reasoning skills and manipulative skills are developed to enhance the understanding of these concepts by introducing new laboratory techniques to prepare them for future analytical work.   ");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane11.setViewportView(jTextArea1);
@@ -1014,7 +1024,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea2.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("Exploring and Understanding the Interconnections of Science is an integrated course that will cover content topics in Biology, Chemistry and Physics.  It introduces foundations of science principles, within the following themes or areas:  Laws and Theories Governing Science; Matter and Energy; Movements, Patterns and Trends; and Impact of Global Warming to Biodiversity.");
+        jTextArea2.setText(" Fundamentals of Biology 2 introduces fundamental concepts in Developmental Biology, Genetics, Cell and Molecular Biology, and the progressively evolving science of biotechnology.  It also aims to provide simulations and real-life applications geared towards a deeper understanding of the principles that govern the cellular and molecular basis of life.   ");
         jTextArea2.setWrapStyleWord(true);
         jTextArea2.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane12.setViewportView(jTextArea2);
@@ -1023,7 +1033,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea3.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
-        jTextArea3.setText("Physical Education 2 (PE 2) — PhysicalFitness and Basic Movement Education 2 focuses on preparing the Grade 8 students for active and successful participation in various physical activities by developing mastery over fundamental manipulative skills and developing adequate fitness level.\n\nHealth Education 2 (Health 2) — ME and my FRIENDS:  PreventiveDrug Education, Safety and First Aid focuses on safety, first aid, and preventive drug education.\n\nMusic 2 — Asian / African Music is the study of Asian/African music to better appreciate our immediate neighbors.  This includesthe music languages of several countries from South East Asia, Central Asia, South Asia, South West Asia, and Africa.  The course is also a review of fundamentals of music with added concepts related to the study of Asian and African music.\n\n ");
+        jTextArea3.setText("Kasaysayan at Pag-unlad ng Panitikang Pilipino Nakasentro ang pag-aaral sa iba’t ibang anyo ng akdang-pampanitikang nalikha at naging popular sa magkakahiwalay na yugto ng ating kasaysayan bilang isang bayan.  Nasusuri rin ang pagbabago at pag-unlad ng wikang ginamit bilang daluyan ng panitikan.  Nilalayon ng kursong ipaalam at ipadama sa kabataang Pilipino ang dangal at henyo ng lahing ating pinagmulan sa pamamagitan ng mga akdang nagsisilbing salamin ng makulay na kultura at mayamang pangkasaysayang karanasan bago pa man dumating ang mga mananakop na Kastila hanggang sa kasalukuyan.  Gagamitin din ang mga aralin upang higit na maunawaan at higit na masuri ang kasalukuyang umiiral na karanasan at kalagayan natin bilang isang bayan tungo sa mga kinakailangang pagbabagong panlipunan.  History and Development of Philippine Literature — This course centers on the study of various literary forms which were created and popularized in different stages of our national history.  It also analyzes the development of the languages which were used as instruments of literary development.  It aims to inform and inspire learners on the pride and genius of the Filipino people through the literary works that reflect the rich and colorful prehistory of the Philippines, its colonization, and its current state.  The lessons shall also be used to analyze further the social experiences demanded by the changing landscape of Philippine society.");
         jTextArea3.setWrapStyleWord(true);
         jTextArea3.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane13.setViewportView(jTextArea3);
@@ -1033,7 +1043,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea4.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
-        jTextArea4.setText("Communication Arts 2 and Afro-Asian Literature primarily aims to enhance the students' proficiency in the five macro-skills and develop further their English communication ability.  In addition, it intends to expose and make students familiar with Asian and African literature in order to promote appreciation for Afro-Asian culture, as well as respect for and tolerance of cultural uniqueness and diversity.");
+        jTextArea4.setText(" Fundamental Physics 2 cover topics on Oscillations and Waves, Sound, Light, Electricity and Magnetism, and uses algebra-based instruction to introduce various physical systems.  Laboratory experiments, computer based simulations, projects and investigatory activities consolidate the basic concepts discussed in lectures.  It aims to demonstrate an understanding of the physics principles and apply skills in observing, inquiring, problem solving, and laboratory techniques as they apply the knowledge and understanding the nature of science and its role and connection to life, society, nature, and the future of the planet and the universe.   ");
         jTextArea4.setWrapStyleWord(true);
         jTextArea4.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane14.setViewportView(jTextArea4);
@@ -1043,7 +1053,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea5.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea5.setLineWrap(true);
         jTextArea5.setRows(5);
-        jTextArea5.setText("Kasanayan sa Komunikasyon at Pagpapahalaga sa Noli me Tangere, Wika, Panitikan at Iba pang Anyo ay sumasaklaw sa kasanayan sa epektibong pakikipagtalastasan sa pamamagitan ng paglinang sa kasanayan sa epektibong pakikipagtalastasan sa pamamagitan ng paglinang sa mga makrong kasanayan tulad ng pakikinig, pagsasalita, pagbasa, pagsulat, at panonood.  Bibigyan ng tuon and pag-aral sa iba’t ibang akdang pampanitikan at pagpapahalaga sa akda ng dakilang bayani na si Dr. Jose Rizal, Noli Me Tangere, upang maitanim sa isipan ng mga mag-aaral ang simulain ng kalayaan at diwang nasyonalismo.  Gayundin, mabibigyan ng sapat na kasanayan at kamulatan ang mga mag-aaral sa pamamagitan ng mga kaalamang pangwika at pampanitikan upang maunawaan at mapahalagahan ang kanilang kultura na magsisilbing gabay sa pahubog ng kanilang katauhan at pagtugon sa mga hamon ng pagbabago sa lipunang kinabibilangan.");
+        jTextArea5.setText("This subject introduces students to plane geometry, analytic geometry, and trigonometry.  The course combines both an inquiry-based and discovery approach, and a deductive reasoning and axiomatic treatment to geometry and trigonometry.  It also includes the use of manipulative devices (e.g., construction tools) and ICT tools to analyze relationships between geometric figures and graphs and properties of trigonometric functions.   ");
         jTextArea5.setWrapStyleWord(true);
         jTextArea5.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane15.setViewportView(jTextArea5);
@@ -1053,7 +1063,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea7.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea7.setLineWrap(true);
         jTextArea7.setRows(5);
-        jTextArea7.setText(" An Introduction to the Design Process - Resistant Materials and Electronics (Application and Evaluation) subject introduces the student to resistant materials and electronics.  This project based course is geared towards attaining a practical knowledge of the common materials, tools, and processes used in technology.  The skills involved include the design, planning and construction of various items, and the continuous application of the design process from the identification and formulation of problems to the evaluation of finished products.  This year is blocked in 2 areas:  resistant materials and electronics, the goal is for each student to experience 3 to 8 design projects per year.  Since the projects will be graded according to variety of benchmarked goals, a project can extend into the next quarter.");
+        jTextArea7.setText("Physical Education 4 (PE 4) — Group Oriented Activities in Sport and Leisure Education 2 provide opportunities for the student to successfully participate in various team games / sports and other group based activities as well as acquire self control and leadership skills that would promote lifelong participation in physical activity.  The course aims to promote sport and leisure education through the provision of experiences that enhance leadership qualities, social interaction, teamwork, and life skills toward lifelong wellness.  Health Education 4 (Health 4) — My Society and Me is a course that focuses on Consumer Health, Community and Environmental Health.  Consumer Health focuses on health information, health products, health services, the nature and dangers of quackery and consumer protection and services.  Community Health focuses on community health problems and hopes to plan and implement community health action project.  Environmental Health focuses on the most pressing environmental problems and their effects on people’s health.  Music 4 — Popular Music and Music Performance prepare the students for a more holistic development by giving them the opportunity to enhance their musical talents.  It also aims to nurture student’s thinking skills and musical creativity by providing opportunities to discuss current music-related issues, and to create music employing computer and electronic musical instruments.  Specifically, it will enhance the level of musical competency and aesthetic sense of the scholars in a global perspective.");
         jTextArea7.setWrapStyleWord(true);
         jTextArea7.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane17.setViewportView(jTextArea7);
@@ -1063,7 +1073,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea8.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea8.setLineWrap(true);
         jTextArea8.setRows(5);
-        jTextArea8.setText("World History 1 maps the progress of man from prehistory to the pre-medieval, emphasizing the origins of human civilization, the early civilizations, the emerging school of thoughts and ideas, and the early empires of the world.  World History 1 will also be discussed in the light of geography, politics, culture, and especially science and technology, providing our students with the vocabulary and perspectives necessary to analyze and articulate what they know and think of global dynamics, patterns of history, and social and economic change.\n\n ");
+        jTextArea8.setText("Communication Arts 4 and World Literature is designed to enhance the competence of the students in the five macro skills, namely listening, speaking, reading, writing, and critical viewing with analytical web-reading and participation, and expose them to some of the best literary pieces that the world has to offer.  The students are expected to become more competent in spoken and written discourse and to develop a keener sense of understanding the diversity in the views and cultures of peoples around the world.   ");
         jTextArea8.setWrapStyleWord(true);
         jTextArea8.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane18.setViewportView(jTextArea8);
@@ -1073,7 +1083,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea9.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea9.setLineWrap(true);
         jTextArea9.setRows(5);
-        jTextArea9.setText("Knowing the Whys and Wherefores:  Toward Adolescent Wholeness.  VE 2 concerns young persons as bearers of values. With a growing desire to build their lives in an expanding world, the students develop, through cours, self deliberation for rendering judgements and decisions on novel, complex, or consequential matters. The meaning or purpose in life is presented not as a choice to be made on the outset, but as an outcome of a process of search and discernment. The values emphasized in this course are: setting one’s life directions from keen observations and memories of events and circumstances; pursuing the good with a methodological approach, a sense of rightness, and a self-disciplined will; and seeking and protecting one’s well being and wholeness.");
+        jTextArea9.setText("Philippine Government & Politics / Constitution is an introductory course in Philippine politics and government.  It seeks to provide our young science scholars opportunities to express their understanding of how government is run, how policies are made, what rights and responsibilities are accorded to each citizen, and what the spaces for social change and transformations are.  The subject is designed to understand the mechanics and motivations of government — \"sovereignty resides in the people and all government authority emanates from them.\"");
         jTextArea9.setWrapStyleWord(true);
         jTextArea9.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane19.setViewportView(jTextArea9);
@@ -1083,7 +1093,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea10.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea10.setLineWrap(true);
         jTextArea10.setRows(5);
-        jTextArea10.setText("Introduction to Computational Thinking is a subject where students are trained to develop solutions using computers for real-life applications.  The focus is on developing program logic formulation skills through pseudo-coding, flowcharting, and procedural or structured programming using a programming language.");
+        jTextArea10.setText("The Thinking Person’s Being and Becoming.  The first half of the course considers how thinking of truths about human reality charts one’s direction in life. Having gotten used to thinking truths through, a person acquires a good sense of what is true and good. An important consequence of truth and goodness is human action undertaken with free and committed consent. As a logical extension of the first half of the course, the second half proposes integrity, excellence, and service as standards to be lived by science scholars in important endeavors: their academic studies and professional work; and participation and leadership in scientific communities. The science profession’s adherence to integrity, excellence, and service in engagements contributing to human development are discussed.");
         jTextArea10.setWrapStyleWord(true);
         jTextArea10.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane20.setViewportView(jTextArea10);
@@ -1093,7 +1103,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jTextArea11.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         jTextArea11.setLineWrap(true);
         jTextArea11.setRows(5);
-        jTextArea11.setText("deals with the concepts and principles of various processes that have formed and continuously shape the Earth and the Universe.  Topics covered is to identify and explain the different processes (internal and external) that continuously shape the Earth, that have formed and affected the Philippine Islands, hazards of these Earth processes and come up with ways to mitigate and adapt to these said hazards and explain how the Solar System, the Stars and the Universe were formed.\n\n ");
+        jTextArea11.setText("Sciences, Technology, Engineering, and Mathematics (STEM) enable scholars to acquire and apply knowledge and skills and synthesize their research experience into a scientific research paper by looking for a particular topic of interest, searching for credible scientific sources, designing methods for the selected topic, implementing the methods, gathering and analyzing data, preparing the research paper, and presenting the research to a science panel in preparation for higher research work in STEM Research 2 and 3.");
         jTextArea11.setWrapStyleWord(true);
         jTextArea11.setMargin(new java.awt.Insets(10, 10, 10, 10));
         jScrollPane21.setViewportView(jTextArea11);
@@ -1101,7 +1111,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel32.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/INTEGRATEDSCIENCE.png"))); // NOI18N
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/BIOLOGY.png"))); // NOI18N
         jLabel32.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel32.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel32.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1109,7 +1119,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel34.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/MATHEMATICS.png"))); // NOI18N
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/CHEMISTRY.png"))); // NOI18N
         jLabel34.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel34.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel34.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1117,7 +1127,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel35.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/ENGLISH.png"))); // NOI18N
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/PHYSICS.png"))); // NOI18N
         jLabel35.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel35.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel35.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1125,7 +1135,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel36.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/FILIPINO.png"))); // NOI18N
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/MATHEMATICS.png"))); // NOI18N
         jLabel36.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel36.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel36.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1133,7 +1143,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel37.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/SOCSCI.png"))); // NOI18N
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/ENGLISH.png"))); // NOI18N
         jLabel37.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel37.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel37.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1141,7 +1151,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel38.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/PEHM.png"))); // NOI18N
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/FILIPINO.png"))); // NOI18N
         jLabel38.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel38.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel38.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1149,7 +1159,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel39.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/VALED.png"))); // NOI18N
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/SOCSCI.png"))); // NOI18N
         jLabel39.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel39.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel39.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1157,7 +1167,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel40.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(255, 255, 255));
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/ADTECH.png"))); // NOI18N
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/PEHM.png"))); // NOI18N
         jLabel40.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel40.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel40.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1165,7 +1175,7 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel41.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(255, 255, 255));
         jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/CS.png"))); // NOI18N
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/VALED.png"))); // NOI18N
         jLabel41.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel41.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel41.setPreferredSize(new java.awt.Dimension(240, 130));
@@ -1173,10 +1183,28 @@ public class GRADE10 extends javax.swing.JFrame {
         jLabel42.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/ES.png"))); // NOI18N
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/RESEARCH.png"))); // NOI18N
         jLabel42.setMaximumSize(new java.awt.Dimension(240, 130));
         jLabel42.setMinimumSize(new java.awt.Dimension(240, 130));
         jLabel42.setPreferredSize(new java.awt.Dimension(240, 130));
+
+        jTextArea12.setEditable(false);
+        jTextArea12.setColumns(20);
+        jTextArea12.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
+        jTextArea12.setLineWrap(true);
+        jTextArea12.setRows(5);
+        jTextArea12.setText("Object-Oriented Programming employs output-based learning and aims to teach students to relate real life objects using object oriented programming.  This stimulates analytical thinking and problem solving techniques by connecting everyday problems with concepts in the object oriented paradigm.   ");
+        jTextArea12.setWrapStyleWord(true);
+        jTextArea12.setMargin(new java.awt.Insets(10, 10, 10, 10));
+        jScrollPane22.setViewportView(jTextArea12);
+
+        jLabel43.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ace/CS.png"))); // NOI18N
+        jLabel43.setMaximumSize(new java.awt.Dimension(240, 130));
+        jLabel43.setMinimumSize(new java.awt.Dimension(240, 130));
+        jLabel43.setPreferredSize(new java.awt.Dimension(240, 130));
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
         jPanel34.setLayout(jPanel34Layout);
@@ -1184,7 +1212,7 @@ public class GRADE10 extends javax.swing.JFrame {
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel34Layout.createSequentialGroup()
                 .addGap(260, 260, 260)
-                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 694, Short.MAX_VALUE)
+                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(260, 260, 260))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1200,7 +1228,8 @@ public class GRADE10 extends javax.swing.JFrame {
                             .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
                         .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane15)
@@ -1209,10 +1238,11 @@ public class GRADE10 extends javax.swing.JFrame {
                             .addComponent(jScrollPane19)
                             .addComponent(jScrollPane17)
                             .addComponent(jScrollPane20)
-                            .addComponent(jScrollPane21)
+                            .addComponent(jScrollPane21, javax.swing.GroupLayout.DEFAULT_SIZE, 811, Short.MAX_VALUE)
                             .addComponent(jScrollPane14)
                             .addComponent(jScrollPane11, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane12)))
+                            .addComponent(jScrollPane12)
+                            .addComponent(jScrollPane22)))
                     .addGroup(jPanel34Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(jSeparator5)))
@@ -1269,7 +1299,9 @@ public class GRADE10 extends javax.swing.JFrame {
                         .addGap(83, 83, 83)
                         .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(80, 80, 80)
-                        .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel34Layout.createSequentialGroup()
                         .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(50, 50, 50)
@@ -1279,7 +1311,9 @@ public class GRADE10 extends javax.swing.JFrame {
                         .addGap(50, 50, 50)
                         .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(50, 50, 50)
-                        .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1289,7 +1323,7 @@ public class GRADE10 extends javax.swing.JFrame {
         homepageScreen.setLayout(homepageScreenLayout);
         homepageScreenLayout.setHorizontalGroup(
             homepageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1226, Short.MAX_VALUE)
         );
         homepageScreenLayout.setVerticalGroup(
             homepageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1409,12 +1443,12 @@ public class GRADE10 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonPanel2Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(50, 50, 50)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(SAVE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE))
+                    .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(15, 15, 15))
             .addGroup(buttonPanel2Layout.createSequentialGroup()
                 .addGap(226, 226, 226)
@@ -1475,7 +1509,7 @@ public class GRADE10 extends javax.swing.JFrame {
             inputscreen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(inputscreen2Layout.createSequentialGroup()
                 .addGap(203, 203, 203)
-                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
+                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(203, 203, 203))
             .addGroup(inputscreen2Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
@@ -1504,7 +1538,7 @@ public class GRADE10 extends javax.swing.JFrame {
         inputpageScreen.setLayout(inputpageScreenLayout);
         inputpageScreenLayout.setHorizontalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)
+            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1226, Short.MAX_VALUE)
         );
         inputpageScreenLayout.setVerticalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1665,16 +1699,17 @@ public class GRADE10 extends javax.swing.JFrame {
         progressTable.setForeground(new java.awt.Color(57, 53, 54));
         progressTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Integrated Science", null},
+                {"Biology", null},
+                {"Chemistry", null},
+                {"Physics", null},
                 {"Mathematics", null},
                 {"English", null},
                 {"Filipino", null},
-                {"Social Science", null},
+                {"Social Science", ""},
                 {"PEHM", null},
-                {"VALED", ""},
-                {"ADTech", null},
-                {"Computer Science", null},
-                {"Earth Science", null}
+                {"VALED", null},
+                {"Research", null},
+                {"Computer Science", null}
             },
             new String [] {
                 "SUBJECT", "GRADE"
@@ -1970,17 +2005,17 @@ public class GRADE10 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnHidemenuMouseExited
 
     private void btnHidemenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHidemenuMouseClicked
-        //clickmenu(hidemenu, setting, 1);
+        
         if (a == false) {
             hideshow(menu, a);
             SwingUtilities.updateComponentTreeUI(this);
-            //slideAnimation(menuHide, 0, menuHide.getWidth(), 10);
+            
             a = true;
         }
         else {
             hideshow(menu, a);
             SwingUtilities.updateComponentTreeUI(this);           
-            //slideAnimation(menuHide, menuHide.getWidth(), 0, 10);
+            
             a = false;
         }   
     }//GEN-LAST:event_btnHidemenuMouseClicked
@@ -2212,7 +2247,22 @@ public class GRADE10 extends javax.swing.JFrame {
     }//GEN-LAST:event_menuSub10MouseClicked
 
     private void menuSub11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSub11MouseClicked
-        
+        jScrollPane1.getViewport().setViewPosition(new Point(0, 2300));
+
+        homepageScreen.setVisible(true);
+        inputpageScreen.setVisible(false);
+        progresspageScreen.setVisible(false);
+        finalpageScreen.setVisible(false);
+
+        homepage.setBackground(new Color(130,130,130));
+        inputpage.setBackground(new Color(194,194,194));
+        progresspage.setBackground(new Color(194,194,194));
+        finalpage.setBackground(new Color(194,194,194));
+
+        btnHomepage.setForeground(new Color(255,255,255));
+        btnInputpage.setForeground(new Color(57,53,54));
+        btnProgresspage.setForeground(new Color(57,53,54));
+        btnFinalpage.setForeground(new Color(57,53,54));   
     }//GEN-LAST:event_menuSub11MouseClicked
 
     private void sub1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sub1MouseEntered
@@ -2412,24 +2462,22 @@ public class GRADE10 extends javax.swing.JFrame {
     }//GEN-LAST:event_CLEARDATAActionPerformed
 
     private void GWAB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GWAB1ActionPerformed
-        // Define your subjects and their corresponding units here
         Map<String, Double> subjectUnits = new HashMap<>();
-        // TODO: Replace the keys and values below with your actual subjects and units
-        subjectUnits.put("INTEGRATED SCIENCE", 1.7);
-        subjectUnits.put("MATH", 1.7);
-        subjectUnits.put("ENGLISH", 1.3);
+        subjectUnits.put("BIOLOGY", 1.0);
+        subjectUnits.put("CHEMISTRY", 1.0);
+        subjectUnits.put("PHYSICS", 1.0);
+        subjectUnits.put("MATH", 1.3);
+        subjectUnits.put("ENGLISH", 1.0);
         subjectUnits.put("FILIPINO", 1.0);
         subjectUnits.put("SOCIAL SCIENCE", 1.0);
         subjectUnits.put("PEHM", 1.0);
-        subjectUnits.put("ADTECH", 1.0);
+        subjectUnits.put("RESEARCH", 1.0);
         subjectUnits.put("COMPUTER SCIENCE", 1.0);
 
         double totalWeightedGrades = 0.0;
         double totalUnits = 0.0;
 
         Connection con = null;
-        PreparedStatement pst = null;
-        ResultSet rs = null;
 
         try {
             con = DatabaseConnection.getAceDatabaseConnection();
@@ -2438,77 +2486,77 @@ public class GRADE10 extends javax.swing.JFrame {
                 return;
             }
 
-            for (Map.Entry<String, Double> entry : subjectUnits.entrySet()) {
-                String subject = entry.getKey();
-                double unit = entry.getValue();
+            // Query all grades for the user and grade level
+            String sql = "SELECT subject, grade FROM grades WHERE user_id = ? AND grade_level = ?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setInt(1, GlobalClass.userId);
+            pst.setString(2, GlobalClass.gradeLevel);
+            ResultSet rs = pst.executeQuery();
 
-                // Fetch grade for this subject
-                pst = con.prepareStatement("SELECT grade FROM grades WHERE subject = ?");
-                pst.setString(1, subject);
-                rs = pst.executeQuery();
+            while (rs.next()) {
+                String subject = rs.getString("subject").toUpperCase().trim();
+                double grade = rs.getDouble("grade");
 
-                if (rs.next()) {
-                    double grade = rs.getDouble("grade");
+                // Only calculate if the subject exists in the subjectUnits map
+                if (subjectUnits.containsKey(subject)) {
+                    double unit = subjectUnits.get(subject);
                     totalWeightedGrades += grade * unit;
                     totalUnits += unit;
                 } else {
-                    // Missing grade found - show error and abort
-                    JOptionPane.showMessageDialog(this, 
-                        "Not complete subjects: missing grade for " + subject, 
-                        "Incomplete Data", JOptionPane.ERROR_MESSAGE);
-                    return;
+                    JOptionPane.showMessageDialog(this,
+                        "Subject not recognized or not weighted: " + subject,
+                        "Warning", JOptionPane.WARNING_MESSAGE);
                 }
-                rs.close();
-                pst.close();
             }
-            double equivalent = 1.00;
+
+            rs.close();
+            pst.close();
+
+            if (totalUnits == 0) {
+                JOptionPane.showMessageDialog(this, "No valid grades found. Check your database data.");
+                return;
+            }
+
+            // Calculate weighted average
             double weightedAverage = totalWeightedGrades / totalUnits;
 
+            // Determine equivalent grade
+            double equivalent = 1.00;
+            if (weightedAverage >= 96.00 && weightedAverage <= 100.00) {
+                equivalent = 1.00;
+            } else if (weightedAverage >= 90) {
+                equivalent = 1.25;
+            } else if (weightedAverage >= 84) {
+                equivalent = 1.50;
+            } else if (weightedAverage >= 78) {
+                equivalent = 1.75;
+            } else if (weightedAverage >= 72) {
+                equivalent = 2.00;
+            } else if (weightedAverage >= 66) {
+                equivalent = 2.25;
+            } else if (weightedAverage >= 60) {
+                equivalent = 2.50;
+            } else if (weightedAverage >= 55) {
+                equivalent = 2.75;
+            } else if (weightedAverage >= 50) {
+                equivalent = 3.00;
+            } else if (weightedAverage >= 40) {
+                equivalent = 4.00;
+            } else {
+                equivalent = 5.00;
+            }
+
             JOptionPane.showMessageDialog(this,
-                    String.format("Overall Weighted Average: %.2f%%", weightedAverage),
-                    "Calculation Result", JOptionPane.INFORMATION_MESSAGE);
-                    
-                    double grade = weightedAverage;
-                     if (grade >= 96.00 && grade <= 100.00) {
-                        equivalent = 1.00;
-                    } else if (grade >= 90 && grade <= 95.99) {
-                        equivalent = 1.25;
-                    } else if (grade >= 84 && grade <= 89.99) {
-                        equivalent = 1.50;
-                    } else if (grade >= 78 && grade <= 83.99) {
-                        equivalent = 1.75;
-                    } else if (grade >= 72 && grade <= 77.99) {
-                        equivalent = 2.00;
-                    } else if (grade >= 66 && grade <= 71.99) {
-                        equivalent = 2.25;
-                    } else if (grade >= 60 && grade <= 65.99) {
-                        equivalent = 2.50;
-                    } else if (grade >= 55 && grade <= 59.99) {
-                        equivalent = 2.75;
-                    } else if (grade >= 50 && grade <= 54.99) {
-                        equivalent = 3.00;
-                    } else if (grade >= 40 && grade <= 49.99) {
-                        equivalent = 4.00;
-                    } else if (grade < 40) {
-                        equivalent = 5.00;
-                    
-                        
-        }
-                    
-                    TGWA.setText(String.valueOf(equivalent));
+                String.format("Overall Weighted Average: %.2f%%\nEquivalent Grade: %.2f", weightedAverage, equivalent),
+                "Calculation Result", JOptionPane.INFORMATION_MESSAGE);
+
+            TGWA.setText(String.valueOf(equivalent));
 
         } catch (Exception ex) {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(this, "Error calculating grades: " + ex.getMessage());
-        } finally {
-            try {
-                if (rs != null) rs.close();
-                if (pst != null) pst.close();
-                if (con != null) con.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
+
         
     
     }//GEN-LAST:event_GWAB1ActionPerformed
@@ -2536,7 +2584,7 @@ public class GRADE10 extends javax.swing.JFrame {
            DLA.setForeground(Color.green);
        }else{
            DL.setBackground(java.awt.Color.RED);
-           DLA.setText("THANK YOU FOR TRYING YOUR BEST!");
+           DLA.setText("THANK YOU FOR TRYING YOUR BEST! MAYBE NEXT TIME.");
            DLA.setForeground(Color.red);
        }       
        }
@@ -2552,32 +2600,35 @@ public class GRADE10 extends javax.swing.JFrame {
 
 
         switch (selected) {
-            case "INTEGRATED SCIENCE":
+            case "BIOLOGY":
                 model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                break;
+            case "CHEMISTRY":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "QUARTER EXAM(score)", "QUARTER EXAM(total)" });
+                break;
+            case "PHYSICS":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "QUARTER EXAM(score)", "QUARTER EXAM(total)" });
                 break;
             case "MATH":
                 model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
                 break;
             case "ENGLISH":
-                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                 model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "QUARTER EXAM(score)", "QUARTER EXAM(total)" });
                 break;
             case "FILIPINO":
-                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                 model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "QUARTER EXAM(score)", "QUARTER EXAM(total)" });
                 break;
             case "SOCIAL SCIENCE":
-                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
-                break;
-            case "COMPUTER SCIENCE":
-                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)", "LONG TEST(total)" });
+                 model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "QUARTER EXAM(score)", "QUARTER EXAM(total)" });
                 break;
             case "PEHM":
                 model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)"});
                 break;
-            case "ADTECH":
-                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)"});
+            case "RESEARCH":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)" });
                 break;
-            case "EARTH SCIENCE":
-                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)","LONG TEST(total)" });
+            case "COMPUTER SCIENCE":
+                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)"});
                 break;
             default:
                 model.setColumnIdentifiers(new Object[]{"Column1", "Column2"});
@@ -2856,6 +2907,16 @@ public class GRADE10 extends javax.swing.JFrame {
             this.dispose();
         }
     }//GEN-LAST:event_CHANGEActionPerformed
+
+    private void menuSub11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSub11MouseEntered
+        sub10.setBackground(new Color(0,0,0));
+        menuSub11.setForeground(new Color(153,0,0));
+    }//GEN-LAST:event_menuSub11MouseEntered
+
+    private void menuSub11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSub11MouseExited
+        sub10.setBackground(new Color(153,0,0));
+        menuSub11.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_menuSub11MouseExited
     private void addEmptyRow() {
         int numColumns = assessmentTypes.length * 2; // 6 columns
         Object[] rowData = new Object[numColumns];
@@ -2940,15 +3001,16 @@ public class GRADE10 extends javax.swing.JFrame {
         double[] weights;
 
         Map<String, double[]> subjectWeights = new HashMap<>();
-        subjectWeights.put("INTEGRATED SCIENCE", new double[]{0.25, 0.25, 0.50});
-        subjectWeights.put("MATHEMATICS", new double[]{0.25, 0.25, 0.50});
-        subjectWeights.put("ENGLISH", new double[]{0.25, 0.40, 0.35});
+        subjectWeights.put("BIOLOGY", new double[]{0.25, 0.25, 0.50});
+        subjectWeights.put("CHEMISTRY", new double[]{0.25, 0.40, 0.35});
+        subjectWeights.put("PHYSICS", new double[]{0.25, 0.40, 0.35});
+        subjectWeights.put("MATH", new double[]{0.25, 0.25, 0.50});
+        subjectWeights.put("ENGLISH", new double[]{0.25, 0.25, 0.35});
         subjectWeights.put("FILIPINO", new double[]{0.25, 0.40, 0.35});
-        subjectWeights.put("SOCIAL SCIENCE", new double[]{0.25, 0.25, 0.35});
+        subjectWeights.put("SOCIAL SCIENCE", new double[]{0.25, 0.40, 0.35});
         subjectWeights.put("PEHM", new double[]{0.25, 0.75});
-        subjectWeights.put("ADTECH", new double[]{0.25, 0.75});
-        subjectWeights.put("COMPUTER SCIENCE", new double[]{0.25, 0.40, 0.35});
-        subjectWeights.put("EARTH SCIENCE", new double[]{0.25, 0.25, 0.50});
+        subjectWeights.put("RESEARCH", new double[]{0.25, 0.75});
+        subjectWeights.put("COMPUTER SCIENCE", new double[]{0.25, 0.75});
 
         // Get the weights for the selected subject
         if (subjectWeights.containsKey(selectedSubject) && subjectWeights.get(selectedSubject).length == categoryCount) {
@@ -3120,7 +3182,6 @@ private void loadGrades() {
         } finally {
             try {
                 if (pst != null) pst.close();
-                if (con != null) con.close();
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
@@ -3260,6 +3321,7 @@ private void loadGrades() {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -3283,6 +3345,7 @@ private void loadGrades() {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane21;
+    private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane23;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane6;
@@ -3295,6 +3358,7 @@ private void loadGrades() {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
+    private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;

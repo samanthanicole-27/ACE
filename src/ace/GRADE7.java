@@ -406,7 +406,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub2.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub2.setText("MATH 2");
+        menuSub2.setText("MATH 1");
         menuSub2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub2MouseClicked(evt);
@@ -443,7 +443,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub3.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub3.setText("ENGLISH 2");
+        menuSub3.setText("ENGLISH 1");
         menuSub3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub3MouseClicked(evt);
@@ -472,7 +472,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub4.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub4.setText("FILIPINO 2");
+        menuSub4.setText("FILIPINO 1");
         menuSub4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub4MouseClicked(evt);
@@ -501,7 +501,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub5.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub5.setText("SOC.SCI. 2");
+        menuSub5.setText("SOC.SCI. 1");
         menuSub5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub5MouseClicked(evt);
@@ -530,7 +530,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub6.setText("PEHM 2");
+        menuSub6.setText("PEHM 1");
         menuSub6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub6MouseClicked(evt);
@@ -559,7 +559,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub7.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub7.setText("VALED 2");
+        menuSub7.setText("VALED 1");
         menuSub7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub7MouseClicked(evt);
@@ -588,7 +588,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub8.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub8.setText("ADTECH 2");
+        menuSub8.setText("ADTECH 1");
         menuSub8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub8MouseClicked(evt);
@@ -617,7 +617,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub9.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub9.setText("COMP.SCI. 2");
+        menuSub9.setText("COMP.SCI. 1");
         menuSub9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub9MouseClicked(evt);
@@ -646,7 +646,6 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub10.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub10.setText("EARTH.SCI.");
         menuSub10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub10MouseClicked(evt);
@@ -696,7 +695,7 @@ public class GRADE7 extends javax.swing.JFrame {
 
         menuSub1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
         menuSub1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        menuSub1.setText("INT.SCI. 2");
+        menuSub1.setText("INT.SCI. 1");
         menuSub1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuSub1MouseClicked(evt);
@@ -833,7 +832,7 @@ public class GRADE7 extends javax.swing.JFrame {
             homepageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homepageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnHomepage, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                .addComponent(btnHomepage, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
                 .addContainerGap())
         );
         homepageLayout.setVerticalGroup(
@@ -868,7 +867,7 @@ public class GRADE7 extends javax.swing.JFrame {
             inputpageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(inputpageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnInputpage, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
+                .addComponent(btnInputpage, javax.swing.GroupLayout.DEFAULT_SIZE, 289, Short.MAX_VALUE)
                 .addContainerGap())
         );
         inputpageLayout.setVerticalGroup(
@@ -903,7 +902,7 @@ public class GRADE7 extends javax.swing.JFrame {
             progresspageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(progresspageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnProgresspage, javax.swing.GroupLayout.DEFAULT_SIZE, 292, Short.MAX_VALUE)
+                .addComponent(btnProgresspage, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addContainerGap())
         );
         progresspageLayout.setVerticalGroup(
@@ -938,7 +937,7 @@ public class GRADE7 extends javax.swing.JFrame {
             finalpageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(finalpageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnFinalpage, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
+                .addComponent(btnFinalpage, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE)
                 .addContainerGap())
         );
         finalpageLayout.setVerticalGroup(
@@ -984,7 +983,7 @@ public class GRADE7 extends javax.swing.JFrame {
         jScrollPane1.setPreferredSize(new java.awt.Dimension(1224, 1356));
 
         jPanel34.setBackground(new java.awt.Color(57, 53, 54));
-        jPanel34.setPreferredSize(new java.awt.Dimension(805, 2400));
+        jPanel34.setPreferredSize(new java.awt.Dimension(805, 2300));
 
         jLabel31.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 24)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
@@ -1163,7 +1162,7 @@ public class GRADE7 extends javax.swing.JFrame {
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel34Layout.createSequentialGroup()
                 .addGap(260, 260, 260)
-                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 609, Short.MAX_VALUE)
+                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, 694, Short.MAX_VALUE)
                 .addGap(260, 260, 260))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1253,7 +1252,7 @@ public class GRADE7 extends javax.swing.JFrame {
                         .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(50, 50, 50)
                         .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(406, Short.MAX_VALUE))
+                .addContainerGap(306, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel34);
@@ -1262,7 +1261,7 @@ public class GRADE7 extends javax.swing.JFrame {
         homepageScreen.setLayout(homepageScreenLayout);
         homepageScreenLayout.setHorizontalGroup(
             homepageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1141, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1226, Short.MAX_VALUE)
         );
         homepageScreenLayout.setVerticalGroup(
             homepageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1382,12 +1381,12 @@ public class GRADE7 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonPanel2Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)
+                    .addComponent(addRowButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(CLEAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(50, 50, 50)
                 .addGroup(buttonPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(SAVE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE))
+                    .addComponent(calculateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(15, 15, 15))
             .addGroup(buttonPanel2Layout.createSequentialGroup()
                 .addGap(226, 226, 226)
@@ -1448,7 +1447,7 @@ public class GRADE7 extends javax.swing.JFrame {
             inputscreen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(inputscreen2Layout.createSequentialGroup()
                 .addGap(203, 203, 203)
-                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
+                .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(203, 203, 203))
             .addGroup(inputscreen2Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
@@ -1477,7 +1476,7 @@ public class GRADE7 extends javax.swing.JFrame {
         inputpageScreen.setLayout(inputpageScreenLayout);
         inputpageScreenLayout.setHorizontalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)
+            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1226, Short.MAX_VALUE)
         );
         inputpageScreenLayout.setVerticalGroup(
             inputpageScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1646,8 +1645,7 @@ public class GRADE7 extends javax.swing.JFrame {
                 {"PEHM", null},
                 {"VALED", ""},
                 {"ADTech", null},
-                {"Computer Science", null},
-                {"Earth Science", null}
+                {"Computer Science", null}
             },
             new String [] {
                 "SUBJECT", "GRADE"
@@ -2166,22 +2164,7 @@ public class GRADE7 extends javax.swing.JFrame {
     }//GEN-LAST:event_menuSub9MouseClicked
 
     private void menuSub10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSub10MouseClicked
-    jScrollPane1.getViewport().setViewPosition(new Point(0, 1800));
-
-        homepageScreen.setVisible(true);
-        inputpageScreen.setVisible(false);
-        progresspageScreen.setVisible(false);
-        finalpageScreen.setVisible(false);
-
-        homepage.setBackground(new Color(130,130,130));
-        inputpage.setBackground(new Color(194,194,194));
-        progresspage.setBackground(new Color(194,194,194));
-        finalpage.setBackground(new Color(194,194,194));
-
-        btnHomepage.setForeground(new Color(255,255,255));
-        btnInputpage.setForeground(new Color(57,53,54));
-        btnProgresspage.setForeground(new Color(57,53,54));
-        btnFinalpage.setForeground(new Color(57,53,54));   
+    
     }//GEN-LAST:event_menuSub10MouseClicked
 
     private void menuSub11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSub11MouseClicked
@@ -2385,9 +2368,7 @@ public class GRADE7 extends javax.swing.JFrame {
     }//GEN-LAST:event_CLEARDATAActionPerformed
 
     private void GWAB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GWAB1ActionPerformed
-        // Define your subjects and their corresponding units here
         Map<String, Double> subjectUnits = new HashMap<>();
-        // TODO: Replace the keys and values below with your actual subjects and units
         subjectUnits.put("INTEGRATED SCIENCE", 1.7);
         subjectUnits.put("MATH", 1.7);
         subjectUnits.put("ENGLISH", 1.3);
@@ -2401,8 +2382,6 @@ public class GRADE7 extends javax.swing.JFrame {
         double totalUnits = 0.0;
 
         Connection con = null;
-        PreparedStatement pst = null;
-        ResultSet rs = null;
 
         try {
             con = DatabaseConnection.getAceDatabaseConnection();
@@ -2411,78 +2390,77 @@ public class GRADE7 extends javax.swing.JFrame {
                 return;
             }
 
-            for (Map.Entry<String, Double> entry : subjectUnits.entrySet()) {
-                String subject = entry.getKey();
-                double unit = entry.getValue();
+            // Query all grades for the user and grade level
+            String sql = "SELECT subject, grade FROM grades WHERE user_id = ? AND grade_level = ?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setInt(1, GlobalClass.userId);
+            pst.setString(2, GlobalClass.gradeLevel);
+            ResultSet rs = pst.executeQuery();
 
-                // Fetch grade for this subject
-                pst = con.prepareStatement("SELECT grade FROM grades WHERE subject = ?");
-                pst.setString(1, subject);
-                rs = pst.executeQuery();
+            while (rs.next()) {
+                String subject = rs.getString("subject").toUpperCase().trim();
+                double grade = rs.getDouble("grade");
 
-                if (rs.next()) {
-                    double grade = rs.getDouble("grade");
+                // Only calculate if the subject exists in the subjectUnits map
+                if (subjectUnits.containsKey(subject)) {
+                    double unit = subjectUnits.get(subject);
                     totalWeightedGrades += grade * unit;
                     totalUnits += unit;
                 } else {
-                    // Missing grade found - show error and abort
-                    JOptionPane.showMessageDialog(this, 
-                        "Not complete subjects: missing grade for " + subject, 
-                        "Incomplete Data", JOptionPane.ERROR_MESSAGE);
-                    return;
+                    JOptionPane.showMessageDialog(this,
+                        "Subject not recognized or not weighted: " + subject,
+                        "Warning", JOptionPane.WARNING_MESSAGE);
                 }
-                rs.close();
-                pst.close();
             }
-            double equivalent = 1.00;
+
+            rs.close();
+            pst.close();
+
+            if (totalUnits == 0) {
+                JOptionPane.showMessageDialog(this, "No valid grades found. Check your database data.");
+                return;
+            }
+
+            // Calculate weighted average
             double weightedAverage = totalWeightedGrades / totalUnits;
 
+            // Determine equivalent grade
+            double equivalent = 1.00;
+            if (weightedAverage >= 96.00 && weightedAverage <= 100.00) {
+                equivalent = 1.00;
+            } else if (weightedAverage >= 90) {
+                equivalent = 1.25;
+            } else if (weightedAverage >= 84) {
+                equivalent = 1.50;
+            } else if (weightedAverage >= 78) {
+                equivalent = 1.75;
+            } else if (weightedAverage >= 72) {
+                equivalent = 2.00;
+            } else if (weightedAverage >= 66) {
+                equivalent = 2.25;
+            } else if (weightedAverage >= 60) {
+                equivalent = 2.50;
+            } else if (weightedAverage >= 55) {
+                equivalent = 2.75;
+            } else if (weightedAverage >= 50) {
+                equivalent = 3.00;
+            } else if (weightedAverage >= 40) {
+                equivalent = 4.00;
+            } else {
+                equivalent = 5.00;
+            }
+
             JOptionPane.showMessageDialog(this,
-                    String.format("Overall Weighted Average: %.2f%%", weightedAverage),
-                    "Calculation Result", JOptionPane.INFORMATION_MESSAGE);
-                    
-                    double grade = weightedAverage;
-                     if (grade >= 96.00 && grade <= 100.00) {
-                        equivalent = 1.00;
-                    } else if (grade >= 90 && grade <= 95.99) {
-                        equivalent = 1.25;
-                    } else if (grade >= 84 && grade <= 89.99) {
-                        equivalent = 1.50;
-                    } else if (grade >= 78 && grade <= 83.99) {
-                        equivalent = 1.75;
-                    } else if (grade >= 72 && grade <= 77.99) {
-                        equivalent = 2.00;
-                    } else if (grade >= 66 && grade <= 71.99) {
-                        equivalent = 2.25;
-                    } else if (grade >= 60 && grade <= 65.99) {
-                        equivalent = 2.50;
-                    } else if (grade >= 55 && grade <= 59.99) {
-                        equivalent = 2.75;
-                    } else if (grade >= 50 && grade <= 54.99) {
-                        equivalent = 3.00;
-                    } else if (grade >= 40 && grade <= 49.99) {
-                        equivalent = 4.00;
-                    } else if (grade < 40) {
-                        equivalent = 5.00;
-                    
-                        
-        }
-                    
-                    TGWA.setText(String.valueOf(equivalent));
+                String.format("Overall Weighted Average: %.2f%%\nEquivalent Grade: %.2f", weightedAverage, equivalent),
+                "Calculation Result", JOptionPane.INFORMATION_MESSAGE);
+
+            TGWA.setText(String.valueOf(equivalent));
 
         } catch (Exception ex) {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(this, "Error calculating grades: " + ex.getMessage());
-        } finally {
-            try {
-                if (rs != null) rs.close();
-                if (pst != null) pst.close();
-                if (con != null) con.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
-        
+
     
     }//GEN-LAST:event_GWAB1ActionPerformed
 
@@ -2509,7 +2487,7 @@ public class GRADE7 extends javax.swing.JFrame {
            DLA.setForeground(Color.green);
        }else{
            DL.setBackground(java.awt.Color.RED);
-           DLA.setText("THANK YOU FOR TRYING YOUR BEST!");
+           DLA.setText("THANK YOU FOR TRYING YOUR BEST! MAYBE NEXT TIME.");
            DLA.setForeground(Color.red);
        }       
        }
@@ -2548,9 +2526,6 @@ public class GRADE7 extends javax.swing.JFrame {
                 break;
             case "ADTECH":
                 model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)"});
-                break;
-            case "EARTH SCIENCE":
-                model.setColumnIdentifiers(new Object[]{"FORMATIVE(score)", "FORMATIVE(total)", "ALTERNATIVE(score)","ALTERNATIVE(total)", "LONG TEST(score)","LONG TEST(total)" });
                 break;
             default:
                 model.setColumnIdentifiers(new Object[]{"Column1", "Column2"});
@@ -2750,13 +2725,11 @@ public class GRADE7 extends javax.swing.JFrame {
     }//GEN-LAST:event_menuSub9MouseExited
 
     private void menuSub10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSub10MouseEntered
-        sub9.setBackground(new Color(0,0,0));
-        menuSub10.setForeground(new Color(153,0,0));
+        
     }//GEN-LAST:event_menuSub10MouseEntered
 
     private void menuSub10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSub10MouseExited
-        sub9.setBackground(new Color(153,0,0));
-        menuSub10.setForeground(new Color(0,0,0));
+       
     }//GEN-LAST:event_menuSub10MouseExited
 
     private void btnHomepageMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomepageMouseEntered
@@ -2914,14 +2887,14 @@ public class GRADE7 extends javax.swing.JFrame {
 
         Map<String, double[]> subjectWeights = new HashMap<>();
         subjectWeights.put("INTEGRATED SCIENCE", new double[]{0.25, 0.25, 0.50});
-        subjectWeights.put("MATHEMATICS", new double[]{0.25, 0.25, 0.50});
+        subjectWeights.put("MATH", new double[]{0.25, 0.25, 0.50});
         subjectWeights.put("ENGLISH", new double[]{0.25, 0.40, 0.35});
         subjectWeights.put("FILIPINO", new double[]{0.25, 0.40, 0.35});
         subjectWeights.put("SOCIAL SCIENCE", new double[]{0.25, 0.25, 0.35});
         subjectWeights.put("PEHM", new double[]{0.25, 0.75});
         subjectWeights.put("ADTECH", new double[]{0.25, 0.75});
         subjectWeights.put("COMPUTER SCIENCE", new double[]{0.25, 0.40, 0.35});
-        subjectWeights.put("EARTH SCIENCE", new double[]{0.25, 0.25, 0.50});
+        
 
         // Get the weights for the selected subject
         if (subjectWeights.containsKey(selectedSubject) && subjectWeights.get(selectedSubject).length == categoryCount) {
@@ -3093,7 +3066,6 @@ private void loadGrades() {
         } finally {
             try {
                 if (pst != null) pst.close();
-                if (con != null) con.close();
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }

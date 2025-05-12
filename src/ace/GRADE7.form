@@ -411,7 +411,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="MATH 2"/>
+                        <Property name="text" type="java.lang.String" value="MATH 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub2MouseClicked"/>
@@ -450,7 +450,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="ENGLISH 2"/>
+                        <Property name="text" type="java.lang.String" value="ENGLISH 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub3MouseClicked"/>
@@ -489,7 +489,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="FILIPINO 2"/>
+                        <Property name="text" type="java.lang.String" value="FILIPINO 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub4MouseClicked"/>
@@ -528,7 +528,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="SOC.SCI. 2"/>
+                        <Property name="text" type="java.lang.String" value="SOC.SCI. 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub5MouseClicked"/>
@@ -567,7 +567,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="PEHM 2"/>
+                        <Property name="text" type="java.lang.String" value="PEHM 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub6MouseClicked"/>
@@ -606,7 +606,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="VALED 2"/>
+                        <Property name="text" type="java.lang.String" value="VALED 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub7MouseClicked"/>
@@ -645,7 +645,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="ADTECH 2"/>
+                        <Property name="text" type="java.lang.String" value="ADTECH 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub8MouseClicked"/>
@@ -684,7 +684,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="COMP.SCI. 2"/>
+                        <Property name="text" type="java.lang.String" value="COMP.SCI. 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub9MouseClicked"/>
@@ -723,7 +723,6 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="EARTH.SCI."/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub10MouseClicked"/>
@@ -802,7 +801,7 @@
                           <Font name="MS Reference Sans Serif" size="14" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="INT.SCI. 2"/>
+                        <Property name="text" type="java.lang.String" value="INT.SCI. 1"/>
                       </Properties>
                       <Events>
                         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuSub1MouseClicked"/>
@@ -886,7 +885,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnHomepage" pref="290" max="32767" attributes="0"/>
+                          <Component id="btnHomepage" pref="291" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -933,7 +932,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnInputpage" pref="288" max="32767" attributes="0"/>
+                          <Component id="btnInputpage" pref="289" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -980,7 +979,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnProgresspage" pref="292" max="32767" attributes="0"/>
+                          <Component id="btnProgresspage" pref="293" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -1027,7 +1026,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnFinalpage" pref="288" max="32767" attributes="0"/>
+                          <Component id="btnFinalpage" pref="287" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -1093,7 +1092,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" alignment="0" pref="1141" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" alignment="0" pref="1226" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -1118,7 +1117,7 @@
                           <Color blue="36" green="35" red="39" type="rgb"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[805, 2400]"/>
+                          <Dimension value="[805, 2300]"/>
                         </Property>
                       </Properties>
 
@@ -1127,7 +1126,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
-                                  <Component id="jLabel31" pref="609" max="32767" attributes="0"/>
+                                  <Component id="jLabel31" pref="694" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -1239,7 +1238,7 @@
                                           <Component id="jScrollPane20" min="-2" pref="160" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="406" max="32767" attributes="0"/>
+                                  <EmptySpace pref="306" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1722,7 +1721,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane10" alignment="1" pref="1224" max="32767" attributes="0"/>
+                      <Component id="jScrollPane10" alignment="1" pref="1226" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -1751,7 +1750,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
-                                  <Component id="jLabel33" pref="816" max="32767" attributes="0"/>
+                                  <Component id="jLabel33" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -1944,13 +1943,13 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="addRowButton" pref="299" max="32767" attributes="0"/>
+                                              <Component id="addRowButton" max="32767" attributes="0"/>
                                               <Component id="CLEAR" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Component id="SAVE" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="calculateButton" alignment="0" pref="305" max="32767" attributes="0"/>
+                                              <Component id="calculateButton" alignment="0" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                       </Group>
@@ -2490,7 +2489,7 @@
                                       <Color blue="36" green="35" red="39" type="rgb"/>
                                     </Property>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="2" rowCount="10">
+                                      <Table columnCount="2" rowCount="9">
                                         <Column editable="false" title="SUBJECT" type="java.lang.Object">
                                           <Data value="Integrated Science"/>
                                           <Data value="Mathematics"/>
@@ -2501,7 +2500,6 @@
                                           <Data value="VALED"/>
                                           <Data value="ADTech"/>
                                           <Data value="Computer Science"/>
-                                          <Data value="Earth Science"/>
                                         </Column>
                                         <Column editable="true" title="GRADE" type="java.lang.Object">
                                           <Data value="null"/>
@@ -2511,7 +2509,6 @@
                                           <Data value="null"/>
                                           <Data value="null"/>
                                           <Data value=""/>
-                                          <Data value="null"/>
                                           <Data value="null"/>
                                           <Data value="null"/>
                                         </Column>
